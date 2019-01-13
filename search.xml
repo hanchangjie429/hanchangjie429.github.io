@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[machine learning is fun]]></title>
+    <url>%2F2019%2F01%2F12%2Fmachine-learning-is-fun%2F</url>
+    <content type="text"><![CDATA[Machine learning part 1 Machine learning part 2 Machine learning part 3 Machine learning part 4 Machine learning part 5 Machine learning part 6 Machine learning part 7 Machine learning part 8]]></content>
+      <tags>
+        <tag>machine learning</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[markdown]]></title>
     <url>%2F2019%2F01%2F12%2Fmarkdown%2F</url>
     <content type="text"><![CDATA[markdown语法介绍]]></content>
