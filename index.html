@@ -294,6 +294,160 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/30/解决hexo搜索加载问题/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="George">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Live And Thrive">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/01/30/解决hexo搜索加载问题/" itemprop="url">解决 Hexo 搜索加载问题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-30T16:36:06-05:00">
+                2019-01-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术贴/" itemprop="url" rel="index">
+                    <span itemprop="name">技术贴</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          最近写了不少文章然后在一次无意点击博客搜索功能的时候，发现搜索一直在加载，却迟迟不显示搜索框。
+
+于是我按照网上的教程，重新安装了一遍 search 插件然后在 config 里面配置了一下搜索功能，结果却不尽人意。
+接着我在 local 服务器里面用审查元素检查了一下搜索功能，发现 search.xml 状态是 200 OK并没有问题。
+然后我进入网址 http://localhost:4000/search.xml 去查询 search.xml 页面下是否有什么问题，果然不出所料，该页面报错，显示 line 52 at column 35 有错误
+
+看样子应该是 utf-8 编码的问题，于
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/30/解决hexo搜索加载问题/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/29/写作规范/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -397,7 +551,12 @@
 下面是示例。
 1234567# 一级标题## 二级标题### 三级标题#### 四级标题
 原则（1）一级标题下，不能直接出现三级标题。
-示例：
+示例：下面的文章结构，缺少二级标题。
+123# 一级标题### 三级标题
+（2）标题要避免孤立编号（即同级标题只有一个）。
+示例：下面的文章结构，二级标题 A只包含一个三级标题，完全可以省略三级标题 A。
+12345## 二级标题 A### 三级标题 A## 二级标题 B
+（3）下级标题不重复上一级标题的
           ...
           <!--noindex-->
           <div class="post-button text-center">
@@ -854,157 +1013,6 @@ RSA算法原理二
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/15/HTML学习手册/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="George">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live And Thrive">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/15/HTML学习手册/" itemprop="url">HTML学习手册</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-15T22:09:58-05:00">
-                2019-01-15
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/skill/" itemprop="url" rel="index">
-                    <span itemprop="name">skill</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          源网站：RUNOOB
-HTML教程超文本标记语言（hypertext markup language）是一种用于创建网页的标准标记语言
-
-HTML简介HTML实例1234567891011&lt;!DOCTYPE HTML&gt;&lt;HTML&gt;&lt;head&gt;&lt;meta ch
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/01/15/HTML学习手册/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1055,7 +1063,7 @@ HTML简介HTML实例1234567891011&lt;!DOCTYPE HTML&gt;&lt;HTML&gt;&lt;head&gt;&l
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">18</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1066,7 +1074,7 @@ HTML简介HTML实例1234567891011&lt;!DOCTYPE HTML&gt;&lt;HTML&gt;&lt;head&gt;&l
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -1077,7 +1085,7 @@ HTML简介HTML实例1234567891011&lt;!DOCTYPE HTML&gt;&lt;HTML&gt;&lt;head&gt;&l
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
