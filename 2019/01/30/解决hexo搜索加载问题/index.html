@@ -87,17 +87,17 @@
 <meta property="og:site_name" content="Live And Thrive">
 <meta property="og:description" content="最近写了不少文章然后在一次无意点击博客搜索功能的时候，发现搜索一直在加载，却迟迟不显示搜索框。  于是我按照网上的教程，重新安装了一遍 search 插件然后在 config 里面配置了一下搜索功能，结果却不尽人意。 接着我在 local 服务器里面用审查元素检查了一下搜索功能，发现 search.xml 状态是 200 OK并没有问题。 然后我进入网址 http://localhost:4000">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Hexo搜索引擎截图1.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Hexo搜索引擎截图3.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Hexo搜索引擎截图4.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Hexo搜索引擎截图5.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Hexo搜索引擎截图6.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Hexo搜索引擎截图7.png">
-<meta property="og:updated_time" content="2019-01-30T22:17:53.907Z">
+<meta property="og:image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE1.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE3.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE4.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE5.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE6.png">
+<meta property="og:image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE7.png">
+<meta property="og:updated_time" content="2019-01-31T20:34:51.949Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="解决 Hexo 搜索加载问题">
 <meta name="twitter:description" content="最近写了不少文章然后在一次无意点击博客搜索功能的时候，发现搜索一直在加载，却迟迟不显示搜索框。  于是我按照网上的教程，重新安装了一遍 search 插件然后在 config 里面配置了一下搜索功能，结果却不尽人意。 接着我在 local 服务器里面用审查元素检查了一下搜索功能，发现 search.xml 状态是 200 OK并没有问题。 然后我进入网址 http://localhost:4000">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Hexo搜索引擎截图1.png">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE1.png">
 
 
 
@@ -392,18 +392,18 @@
 
       
         <p>最近写了不少文章然后在一次无意点击博客搜索功能的时候，发现搜索一直在加载，却迟迟不显示搜索框。</p>
-<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Hexo搜索引擎截图1.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE1.png" alt=""></p>
 <p>于是我按照网上的教程，重新安装了一遍 search 插件然后在 config 里面配置了一下搜索功能，结果却不尽人意。</p>
 <p>接着我在 local 服务器里面用审查元素检查了一下搜索功能，发现 search.xml 状态是 200 OK并没有问题。</p>
 <p>然后我进入网址 <a href="http://localhost:4000/search.xml" target="_blank" rel="noopener">http://localhost:4000/search.xml</a> 去查询 search.xml 页面下是否有什么问题，果然不出所料，该页面报错，显示 line 52 at column 35 有错误</p>
-<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Hexo搜索引擎截图3.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE3.png" alt=""></p>
 <p>看样子应该是 utf-8 编码的问题，于是我找到对应的 Blog 的对应行，使用 Typora 的开发者模式看到了有两处出现了小红点</p>
-<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Hexo搜索引擎截图4.png" alt=""></p>
-<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Hexo搜索引擎截图5.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE4.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE5.png" alt=""></p>
 <p>删除小红点，并重新刷新调试界面，发现这次没有报错了。</p>
-<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Hexo搜索引擎截图6.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE6.png" alt=""></p>
 <p>随后打开 local 的网站，使用搜索功能，发现搜索功能正常，然后在终端 publish，deploy 之后，能够在 Blog 上正常使用搜索功能，大功告成！</p>
-<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Hexo搜索引擎截图7.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE7.png" alt=""></p>
 
       
     </div>
@@ -532,7 +532,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
