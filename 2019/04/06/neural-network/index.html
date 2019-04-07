@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Notes:  $$error_{hidden} = W^{T}{hidden,output} * error{output} ​$$ 为了避免终止于错误的山谷或错误的函数最小值，我们从山上的不同点开始，多次训练神经网络，确保并不总是终止于错误的山谷。不同的起始点意味着选择不同的起始参数，在神经网络的情况下，这意味着选择不同的起始链接权重。 $${\partial E \over \partial">
+<meta name="description" content="$$error_{hidden} = W^{T}_{hidden_output} \cdot error_{output} ​$$ 为了避免终止于错误的山谷或错误的函数最小值，我们从山上的不同点开始，多次训练神经网络，确保并不总是终止于错误的山谷。不同的起始点意味着选择不同的起始参数，在神经网络的情况下，这意味着选择不同的起始链接权重。 $${\partial E \over \partial w">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Neural_Network Notes">
+<meta property="og:title" content="Neural Network Notes">
 <meta property="og:url" content="http://yoursite.com/2019/04/06/neural-network/index.html">
 <meta property="og:site_name" content="Live And Thrive">
-<meta property="og:description" content="Notes:  $$error_{hidden} = W^{T}{hidden,output} * error{output} ​$$ 为了避免终止于错误的山谷或错误的函数最小值，我们从山上的不同点开始，多次训练神经网络，确保并不总是终止于错误的山谷。不同的起始点意味着选择不同的起始参数，在神经网络的情况下，这意味着选择不同的起始链接权重。 $${\partial E \over \partial">
+<meta property="og:description" content="$$error_{hidden} = W^{T}_{hidden_output} \cdot error_{output} ​$$ 为了避免终止于错误的山谷或错误的函数最小值，我们从山上的不同点开始，多次训练神经网络，确保并不总是终止于错误的山谷。不同的起始点意味着选择不同的起始参数，在神经网络的情况下，这意味着选择不同的起始链接权重。 $${\partial E \over \partial w">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-04-07T04:53:01.726Z">
+<meta property="og:updated_time" content="2019-04-07T05:01:41.713Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Neural_Network Notes">
-<meta name="twitter:description" content="Notes:  $$error_{hidden} = W^{T}{hidden,output} * error{output} ​$$ 为了避免终止于错误的山谷或错误的函数最小值，我们从山上的不同点开始，多次训练神经网络，确保并不总是终止于错误的山谷。不同的起始点意味着选择不同的起始参数，在神经网络的情况下，这意味着选择不同的起始链接权重。 $${\partial E \over \partial">
+<meta name="twitter:title" content="Neural Network Notes">
+<meta name="twitter:description" content="$$error_{hidden} = W^{T}_{hidden_output} \cdot error_{output} ​$$ 为了避免终止于错误的山谷或错误的函数最小值，我们从山上的不同点开始，多次训练神经网络，确保并不总是终止于错误的山谷。不同的起始点意味着选择不同的起始参数，在神经网络的情况下，这意味着选择不同的起始链接权重。 $${\partial E \over \partial w">
 
 
 
@@ -125,7 +125,7 @@
 
 
 
-  <title>Neural_Network Notes | Live And Thrive</title>
+  <title>Neural Network Notes | Live And Thrive</title>
   
 
 
@@ -311,7 +311,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Neural_Network Notes</h2>
+          <h2 class="post-title" itemprop="name headline">Neural Network Notes</h2>
         
 
         <div class="post-meta">
@@ -361,12 +361,11 @@
       
 
       
-        <p>Notes: </p>
-<p>$$error_{hidden} = W^{T}<em>{hidden,output} * error</em>{output} ​$$</p>
+        <p>$$error_{hidden} = W^{T}_{hidden_output} \cdot error_{output} ​$$</p>
 <p>为了避免终止于错误的山谷或错误的函数最小值，我们从山上的不同点开始，多次训练神经网络，确保并不总是终止于错误的山谷。不同的起始点意味着选择不同的起始参数，在神经网络的情况下，这意味着选择不同的起始链接权重。</p>
 <p>$${\partial E \over \partial w_{j,k} } = {\partial \over \partial w_{j,k}}\sum_{n}(t_{n}-o_{n})^{2}​$$</p>
 <p>​    $$= {\partial \over \partial w_{j,k}}(t_{k}-o_{k})^{2}$$</p>
-<p>($t_{k}$ is a constant)</p>
+<p>($t_{k}​$ is a constant)</p>
 <p>($o_{k}​$ is the output of the final layer)</p>
 <p>$${\partial E \over \partial w_{j,k} }={\partial E\over \partial o_{k}} \cdot {\partial o_{k} \over \partial w_{j,k}}​$$</p>
 <p>​    $$={-2(t_{k}-o_{k}) \cdot {\partial o_{k} \over \partial w_{j,k}}}​$$</p>
