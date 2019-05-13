@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Neural Network Notes]]></title>
+    <url>%2F2019%2F04%2F06%2Fneural-network%2F</url>
+    <content type="text"><![CDATA[$$error_{hidden} = W^{T}_{hidden_output} \cdot error_{output} $$ 为了避免终止于错误的山谷或错误的函数最小值，我们从山上的不同点开始，多次训练神经网络，确保并不总是终止于错误的山谷。不同的起始点意味着选择不同的起始参数，在神经网络的情况下，这意味着选择不同的起始链接权重。 $${\partial E \over \partial w_{j,k} } = {\partial \over \partial w_{j,k}}\sum_{n}(t_{n}-o_{n})^{2}$$ $$= {\partial \over \partial w_{j,k}}(t_{k}-o_{k})^{2}$$ ($t_{k}$ is a constant) ($o_{k}$ is the output of the final layer) $${\partial E \over \partial w_{j,k} }={\partial E\over \partial o_{k}} \cdot {\partial o_{k} \over \partial w_{j,k}}$$ $$={-2(t_{k}-o_{k}) \cdot {\partial o_{k} \over \partial w_{j,k}}}$$ $$= -2(t_{k}-o_{k}) \cdot {\partial \over\partial w_{j,k}}sigmoid(\sum_{j}w_{j,k} \cdot o_{j})$$ ($o_{j}$ is the output of the hidden layer) Tips: ${\partial \over \partial x}sigmoid(x)=sigmoid(x)(1-sigmoid(x)) $ $${\partial E \over \partial w_{j,k}}={-2(t_{k}-o_{k})} \cdot sigmoid(\sum_{j}w_{j,k} \cdot o_{j})(1-sigmoid(\sum_{j}w_{j,k}) \cdot o_{j})) \cdot {\partial \over \partial w_{j,k}} {(\sum_{j}w_{j,k} \cdot o_{j}) }$$ $$=-2(t_{k}-o_{k}) \cdot sigmoid(\sum_{j}w_{j,k} \cdot o_{j})(1-sigmoid(\sum_{j}w_{j,k} \cdot o_{j}))\cdot o_{j} $$ (Hidden to final layer) $${\partial E \over \partial w_{i,j} } = -(e_{j}) \cdot sigmoid(\sum_{i}w_{i,j} \cdot o_{i})(1-sigmoid(\sum_{i}w_{i,j} \cdot o_{i})) \cdot o_{i}$$ (First to Hidden) $new\ w_{j,k}=old\ w_{j,k}-\alpha \cdot {\partial E \over \partial w_{j,k}} $ 初始化函数-设定输入层节点、隐藏层节点和输出层节点的数量 训练-学习给定训练集样本后，优化权重 查询-给定输入，从输出节点给出答案 对于一个问题，应该选择多少个隐藏层节点，并不存在一个最佳方法。同时我们也没有最佳方法选择需要几层隐藏层。目前而言，最好的办法是进行实验，直到找到适合你要解决的问题的一个数字。]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo常见问题汇总]]></title>
     <url>%2F2019%2F02%2F07%2FHexo%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%2F</url>
-    <content type="text"><![CDATA[如何给博客作者添加头像？博客头像设置在blog/themes/next/config.yml里面设置，在配置文件里面找到「avatar」并将图片的url放在avatar目录后面，即可添加作者头像到博客中。 categories 侧栏无法进行超链接解决方法：检查 blog/source/categories/index.md 里面的 type 是否存在异常的空格或者其他字符。 今天突然发现我的 categories 不能进行超链接，在博客和主题配置文件里弄了半天还是没有解决。随后无意中在运行 hexo server 的时候，发现了一个 FAIL（不是“WARN”） 的提示，提示说在 categories 存在一个不能被识别的block，于是我打开 blog/source/categories/index.md 目录，仔细检查了一下 type 栏里 categories 前后是否存在异常，结果果然发现里面有一个异常的 block， 待我删除掉这个 block 以后，再次运行 hexo server， 发现成功运行。]]></content>
+    <content type="text"><![CDATA[如何给博客作者添加头像？博客头像设置在blog/themes/next/config.yml里面设置，在配置文件里面找到「avatar」并将图片的url放在avatar目录后面，即可添加作者头像到博客中。 categories 侧栏无法进行超链接解决方法：检查 blog/source/categories/index.md 里面的 type 是否存在异常的空格或者其他字符。 今天突然发现我的 categories 不能进行超链接，在博客和主题配置文件里弄了半天还是没有解决。随后无意中在运行 hexo server 的时候，发现了一个 FAIL（不是“WARN”） 的提示，提示说在 categories 存在一个不能被识别的block，于是我打开 blog/source/categories/index.md 目录，仔细检查了一下 type 栏里 categories 前后是否存在异常，结果果然发现里面有一个异常的 block， 待我删除掉这个 block 以后，再次运行 hexo server， 发现成功运行。]]></content>
       <categories>
         <category>干货</category>
       </categories>
