@@ -296,6 +296,160 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/30/解决hexo搜索加载问题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="George">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Snapseed.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Live And Thrive">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/01/30/解决hexo搜索加载问题/" itemprop="url">解决 Hexo 搜索加载问题</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-30T16:36:06-05:00">
+                2019-01-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术贴/" itemprop="url" rel="index">
+                    <span itemprop="name">技术贴</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近写了不少文章然后在一次无意点击博客搜索功能的时候，发现搜索一直在加载，却迟迟不显示搜索框。</p>
+<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE1.png" alt=""></p>
+<p>于是我按照网上的教程，重新安装了一遍 search 插件然后在 config 里面配置了一下搜索功能，结果却不尽人意。</p>
+<p>接着我在 local 服务器里面用审查元素检查了一下搜索功能，发现 search.xml 状态是 200 OK并没有问题。</p>
+<p>然后我进入网址 <a href="http://localhost:4000/search.xml" target="_blank" rel="noopener">http://localhost:4000/search.xml</a> 去查询 search.xml 页面下是否有什么问题，果然不出所料，该页面报错，显示 line 52 at column 35 有错误</p>
+<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE3.png" alt=""></p>
+<p>看样子应该是 utf-8 编码的问题，于是我找到对应的 Blog 的对应行，使用 Typora 的开发者模式看到了有两处出现了小红点</p>
+<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE4.png" alt=""></p>
+<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE5.png" alt=""></p>
+<p>删除小红点，并重新刷新调试界面，发现这次没有报错了。</p>
+<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE6.png" alt=""></p>
+<p>随后打开 local 的网站，使用搜索功能，发现搜索功能正常，然后在终端 publish，deploy 之后，能够在 Blog 上正常使用搜索功能，大功告成！</p>
+<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/hexo%E6%90%9C%E7%B4%A2%E5%BC%95%E6%93%8E%E6%88%AA%E5%9B%BE7.png" alt=""></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/29/写作规范/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1186,188 +1340,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/13/怎样通过Youtube学习/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="George">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Snapseed.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live And Thrive">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/01/13/怎样通过Youtube学习/" itemprop="url">怎样通过Youtube学习</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-13T22:40:58-05:00">
-                2019-01-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/干货/" itemprop="url" rel="index">
-                    <span itemprop="name">干货</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="怎样通过Youtube学习"><a href="#怎样通过Youtube学习" class="headerlink" title="怎样通过Youtube学习"></a>怎样通过Youtube学习</h1><blockquote>
-<ul>
-<li><a href="https://www.youtube.com/user/crashcourse" target="_blank" rel="noopener">Crash Course</a></li>
-<li><a href="https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw" target="_blank" rel="noopener">3Blue1Brown</a></li>
-<li><a href="https://www.youtube.com/user/MIT" target="_blank" rel="noopener">MIT OpenCourseWare</a></li>
-<li><a href="https://www.youtube.com/user/YaleCourses/featured" target="_blank" rel="noopener">Yale Course</a></li>
-<li><a href="https://www.youtube.com/user/khanacademy" target="_blank" rel="noopener">Khan Academy</a></li>
-<li><a href="https://www.youtube.com/user/Vsauce" target="_blank" rel="noopener">Vsauce</a></li>
-<li><a href="https://www.youtube.com/user/Vsauce2" target="_blank" rel="noopener">Vsauce2</a></li>
-<li><a href="https://www.youtube.com/user/Vsauce3" target="_blank" rel="noopener">Vsauce3</a></li>
-<li><a href="https://www.youtube.com/user/scishow" target="_blank" rel="noopener">SciShow</a></li>
-<li><a href="https://www.youtube.com/user/Kurzgesagt" target="_blank" rel="noopener">Kurzgesagt – In a Nutshell</a></li>
-<li><a href="https://www.youtube.com/user/minuteearth" target="_blank" rel="noopener">MinuteEarth</a></li>
-<li><a href="http://www.youtube.com/user/minutephysics" target="_blank" rel="noopener">minutephysics</a></li>
-<li><a href="https://www.youtube.com/user/CGPGrey" target="_blank" rel="noopener">CGP Grey</a></li>
-<li><a href="https://www.youtube.com/channel/UCP5tjEmvPItGyLhmjdwP7Ww/featured" target="_blank" rel="noopener">RealLifeLore</a></li>
-<li><a href="https://www.youtube.com/user/voxdotcom" target="_blank" rel="noopener">Vox</a></li>
-<li><a href="https://www.youtube.com/user/Wendoverproductions/featured" target="_blank" rel="noopener">Wendoverproductions</a></li>
-<li><a href="https://www.youtube.com/user/schooloflifechannel" target="_blank" rel="noopener">The School of Life</a></li>
-</ul>
-</blockquote>
-<p><em><a href="https://mp.weixin.qq.com/s/BWn85bXBnMQpr-flsxO-Fg" target="_blank" rel="noopener">怎样通过Youtube学习</a></em></p>
-<p><br></p>
-<h1 id="怎样通过Youtube学习英语"><a href="#怎样通过Youtube学习英语" class="headerlink" title="怎样通过Youtube学习英语"></a>怎样通过Youtube学习英语</h1><blockquote>
-<h3 id="入门篇"><a href="#入门篇" class="headerlink" title="入门篇"></a>入门篇</h3><ul>
-<li><a href="https://www.youtube.com/user/rachelsenglish" target="_blank" rel="noopener">Rachel’s English</a></li>
-<li><a href="https://www.youtube.com/user/EnglishLessons4U" target="_blank" rel="noopener">EnglishLessons4U</a></li>
-<li><a href="https://www.youtube.com/channel/UC-g0gSStENkYPXFRsKrlvyA" target="_blank" rel="noopener">The English Coach</a></li>
-</ul>
-<h3 id="进阶篇"><a href="#进阶篇" class="headerlink" title="进阶篇"></a>进阶篇</h3><ul>
-<li><a href="https://www.youtube.com/user/Lavendaire" target="_blank" rel="noopener">Lavendaire</a></li>
-<li><a href="https://www.youtube.com/user/jmillburn" target="_blank" rel="noopener">The Minimalists</a></li>
-<li><a href="https://www.youtube.com/user/masterlock77" target="_blank" rel="noopener">Tim Ferriss</a></li>
-</ul>
-</blockquote>
-<p><em><a href="https://mp.weixin.qq.com/s/StnefDNPf1LprQWMkVTMlg" target="_blank" rel="noopener">怎样通过Youtube学习英语</a></em></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1417,7 +1394,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1428,7 +1405,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -1439,7 +1416,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
