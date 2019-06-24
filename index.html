@@ -294,6 +294,215 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/24/python数据化运营/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="George">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Snapseed.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Live And Thrive">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/06/24/python数据化运营/" itemprop="url">python数据化运营</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-24T15:40:20-04:00">
+                2019-06-24
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="2-1-数据化运营的数据来源类型"><a href="#2-1-数据化运营的数据来源类型" class="headerlink" title="2.1 数据化运营的数据来源类型"></a>2.1 数据化运营的数据来源类型</h2><ul>
+<li>数据文件</li>
+<li>数据库</li>
+<li>API</li>
+<li>流式数据</li>
+<li>外部公开数据</li>
+<li>其他来源数据</li>
+</ul>
+<h3 id="2-1-1-数据文件"><a href="#2-1-1-数据文件" class="headerlink" title="2.1.1 数据文件"></a>2.1.1 数据文件</h3><p><strong>数据文件</strong>就是存储数据的文件，广义数据是指任何文件储存的村西，狭义的数据是指以数字或文本形式储存的<strong>结构化</strong>数据记录。</p>
+<h3 id="2-1-2-数据库"><a href="#2-1-2-数据库" class="headerlink" title="2.1.2 数据库"></a>2.1.2 数据库</h3><p><strong>数据库</strong>是按照数据结构来组织、存储和管理数据的仓库。</p>
+<p>数据库的主要应用：</p>
+<ul>
+<li>事务性工作：定义、存储、增加、删除、更新、查询</li>
+<li>数据清洗工作： 数据传输、同步、抽取、转换、加载</li>
+<li>分析型工作： 数据计算、关联查询、OLAP</li>
+<li>其他工作： 数据权限控制、数据质量维护、异构数据库、多系统通信交互</li>
+</ul>
+<p>数据库的分类：</p>
+<ul>
+<li>关系型数据库：DB2、Sybase、Oracle、SQL Server、MYSAQL</li>
+<li>非关系型数据库： <ul>
+<li>面向高性能并发读写的键值数据库（Redis）</li>
+<li>面向海量文档的文档数据库（MongoDB）</li>
+<li>面向可扩展性的列式数据库（HBase）</li>
+<li>面向图结构的图形数据库（Neo4J）</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-1-3-API"><a href="#2-1-3-API" class="headerlink" title="2.1.3 API"></a>2.1.3 API</h3><p>API（Application Programming Interface）：应用程序编程接口<br>数据化运营中的API通常分为<strong>服务型API</strong>和<strong>数据型API</strong></p>
+<ul>
+<li>服务型API：基于预定义的规则，通过调用API实现特定功能</li>
+<li>数据型API： 通过特定的语法，通过向服务器发送数据请求，返回特定格式的数据（大多数情况是JSON、XML）</li>
+</ul>
+<p>JSON</p>
+<ul>
+<li>定义：一种轻量级的数据交换格式，由流行的JavaScript编程语言创建，广泛应用于Web数据交互。</li>
+<li>特点：格式简介、结构清晰、使用键值对的格式存储数据对象，键是数据对象的属性，值是数据对象属性的对应值。例如，“性别”：“男”。</li>
+</ul>
+<p>XML：</p>
+<ul>
+<li>定义：可扩展标记语言，提供了统一的方法来描述和交换独立与应用程序或供应商的结构化数据，是一种成熟且强大的数据格式。</li>
+<li>特点： 有非常好的扩展性，API创建者可以使用他们创建自己的数据结构。</li>
+</ul>
+<h3 id="2-1-4-流式数据"><a href="#2-1-4-流式数据" class="headerlink" title="2.1.4 流式数据"></a>2.1.4 流式数据</h3><p>流式数据</p>
+<ul>
+<li>定义：是指实时或接近实时处理的大数据流。常见的框架有Spark，Storm等。</li>
+<li>特点：能在毫秒到秒之间完成作业，用于处理时效性较强的场景。</li>
+<li>分类：<ul>
+<li>用户行为数据流：围绕人产生的数据流，包括用户在网站和App内部因浏览、搜索、评论、分享、交易以及在外部的微博微信中操作而产生的数据流。</li>
+<li>机器数据流：围绕物产生的数据流，包括从机器的生产、制造、应用、监控和管理等过程中产生的所有数据。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-1-5-外部公开数据"><a href="#2-1-5-外部公开数据" class="headerlink" title="2.1.5 外部公开数据"></a>2.1.5 外部公开数据</h3><ul>
+<li>定义：公开的任意第三方都能获取的数据</li>
+<li>分类：<ul>
+<li>政府和相关机构提供的公开数据</li>
+<li>竞争对手主动公开的数据</li>
+<li>行业协会或相关平台组织提供的统计、咨询数据</li>
+<li>第三方的组织或个人披露的与企业运营相关的数据</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-1-6-其他"><a href="#2-1-6-其他" class="headerlink" title="2.1.6 其他"></a>2.1.6 其他</h3><p>其他数据例如通过调研问卷获得的有关产品、客户等方面的数据，从第三方平台直接购买的数据，通过与其他厂商合作所得交互数据等，这些数据获取场景较少，而且不是主流的数据获取来源。</p>
+<h2 id="2-2-使用python获取运营数据"><a href="#2-2-使用python获取运营数据" class="headerlink" title="2.2 使用python获取运营数据"></a>2.2 使用python获取运营数据</h2><p>主要途径：</p>
+<ul>
+<li>文本文件</li>
+<li>Excel文件</li>
+<li>关系型和非关系型数据库</li>
+<li>API</li>
+<li>网页</li>
+</ul>
+<h3 id="2-2-1-从文本文件读取运营数据"><a href="#2-2-1-从文本文件读取运营数据" class="headerlink" title="2.2.1 从文本文件读取运营数据"></a>2.2.1 从文本文件读取运营数据</h3><ol>
+<li><p>使用read、readline、readlines读取数据<br>基本步骤：<br>1）定义数据文件<br>2）获取文件对象<br>3）读取文件内容<br>4）关闭文件对象</p>
+</li>
+<li><p>使用Numpy的loadtext、load、fromfile读取数据</p>
+</li>
+<li><p>使用Pandas的read_csv、read_fwf、read_table读取数据</p>
+</li>
+<li><p>如何选择最佳读取数据的方法</p>
+</li>
+</ol>
+<p>判断依据：</p>
+<ul>
+<li>数据源情况</li>
+<li>数据处理目标</li>
+<li>模型数据要求</li>
+<li>手感最好的方法</li>
+</ul>
+<h3 id="2-2-2-从Excel获取运营数据"><a href="#2-2-2-从Excel获取运营数据" class="headerlink" title="2.2.2 从Excel获取运营数据"></a>2.2.2 从Excel获取运营数据</h3><p>由于Excel本身的限制和适用范围，其无法储存和计算过大的数据量，并且Excel本身也不是为了海量数据的应用而产生的。因此Excel只适用于日常基本的数据处理</p>
+<h3 id="2-2-3-从关系型数据库MySQL读取运营数据"><a href="#2-2-3-从关系型数据库MySQL读取运营数据" class="headerlink" title="2.2.3 从关系型数据库MySQL读取运营数据"></a>2.2.3 从关系型数据库MySQL读取运营数据</h3><h3 id="2-2-4-从非关系型数据库MongoDB读取运营数据"><a href="#2-2-4-从非关系型数据库MongoDB读取运营数据" class="headerlink" title="2.2.4 从非关系型数据库MongoDB读取运营数据"></a>2.2.4 从非关系型数据库MongoDB读取运营数据</h3>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/17/周志华 《机器学习》 学习笔记/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -870,276 +1079,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/07/Netflix-Culture/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="George">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Snapseed.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live And Thrive">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/02/07/Netflix-Culture/" itemprop="url">Netflix Culture</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-07T17:30:27-05:00">
-                2019-02-07
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h2 id="Netflix-Culture"><a href="#Netflix-Culture" class="headerlink" title="Netflix Culture"></a>Netflix Culture</h2><p>Entertainment, like friendship, is a fundamental human need; it changes how we feel and gives us common ground. Netflix is better entertainment at lower cost and greater scale than the world has ever seen. We want to entertain everyone, and make the world smile.</p>
-<p>This document is about our unusual employee culture.</p>
-<p>Like all great companies, we strive to hire the best and we value integrity, excellence, respect, inclusivity, and collaboration. What is special about Netflix, though, is how much we:</p>
-<ol>
-<li><strong>encourage independent decision-making by employees</strong></li>
-<li><strong>share information openly, broadly, and deliberately</strong></li>
-<li><strong>are extraordinarily candid with each other</strong></li>
-<li><strong>keep only our highly effective people</strong></li>
-<li><strong>avoid rules</strong></li>
-</ol>
-<p>Our core philosophy is <strong>people over process</strong>. More specifically, we have great people working together as a <strong>dream team</strong>. With this approach, we are a more flexible, fun, stimulating, creative, collaborative and successful organization.</p>
-<h2 id="Real-Values"><a href="#Real-Values" class="headerlink" title="Real Values"></a>Real Values</h2><p>Many companies have value statements, but often these written values are vague and ignored. The real values of a firm are shown by who gets rewarded or let go. Below are our real values, the specific behaviors and skills we care about most. The more these values sound like you, and describe people you want to work with, the more likely you will thrive at Netflix.</p>
-<h3 id="Judgment"><a href="#Judgment" class="headerlink" title="Judgment"></a>Judgment</h3><ul>
-<li>You make wise decisions despite ambiguity</li>
-<li>You identify root causes, and get beyond treating symptoms</li>
-<li>You think strategically, and can articulate what you are, and are not, trying to do</li>
-<li>You are good at using data to inform your intuition</li>
-<li>You make decisions based on the long term, not near term</li>
-</ul>
-<h3 id="Communication"><a href="#Communication" class="headerlink" title="Communication"></a>Communication</h3><ul>
-<li>You are concise and articulate in speech and writing</li>
-<li>You listen well and seek to understand before reacting</li>
-<li>You maintain calm poise in stressful situations to draw out the clearest thinking</li>
-<li>You adapt your communication style to work well with people from around the world who may not share your native language</li>
-<li>You provide candid, helpful, timely feedback to colleagues</li>
-</ul>
-<h3 id="Curiosity"><a href="#Curiosity" class="headerlink" title="Curiosity"></a>Curiosity</h3><ul>
-<li>You learn rapidly and eagerly</li>
-<li>You contribute effectively outside of your specialty</li>
-<li>You make connections that others miss</li>
-<li>You seek to understand our members around the world, and how we entertain them</li>
-<li>You seek alternate perspectives</li>
-</ul>
-<h3 id="Courage"><a href="#Courage" class="headerlink" title="Courage"></a>Courage</h3><ul>
-<li>You say what you think, when it’s in the best interest of Netflix, even if it is uncomfortable</li>
-<li>You are willing to be critical of the status quo</li>
-<li>You make tough decisions without agonizing</li>
-<li>You take smart risks and are open to possible failure</li>
-<li>You question actions inconsistent with our values</li>
-<li>You are able to be vulnerable, in search of truth</li>
-</ul>
-<h3 id="Passion"><a href="#Passion" class="headerlink" title="Passion"></a>Passion</h3><ul>
-<li>You inspire others with your thirst for excellence</li>
-<li>You care intensely about our members and Netflix‘s success</li>
-<li>You are tenacious and optimistic</li>
-<li>You are quietly confident and openly humble</li>
-</ul>
-<h3 id="Selflessness"><a href="#Selflessness" class="headerlink" title="Selflessness"></a>Selflessness</h3><ul>
-<li>You seek what is best for Netflix, rather than what is best for yourself or your group</li>
-<li>You are open-minded in search of the best ideas</li>
-<li>You make time to help colleagues</li>
-<li>You share information openly and proactively</li>
-</ul>
-<h3 id="Innovation"><a href="#Innovation" class="headerlink" title="Innovation"></a>Innovation</h3><ul>
-<li>You create new ideas that prove useful</li>
-<li>You re-conceptualize issues to discover solutions to hard problems</li>
-<li>You challenge prevailing assumptions, and suggest better approaches</li>
-<li>You keep us nimble by minimizing complexity and finding time to simplify</li>
-<li>You thrive on change</li>
-</ul>
-<h3 id="Inclusion"><a href="#Inclusion" class="headerlink" title="Inclusion"></a>Inclusion</h3><ul>
-<li>You collaborate effectively with people of diverse backgrounds and cultures</li>
-<li>You nurture and embrace differing perspectives to make better decisions</li>
-<li>You focus on talent and our values, rather than a person’s similarity to yourself</li>
-<li>You are curious about how our different backgrounds affect us at work, rather than pretending they don’t affect us</li>
-<li>You recognize we all have biases, and work to grow past them</li>
-<li>You intervene if someone else is being marginalized</li>
-</ul>
-<h3 id="Integrity"><a href="#Integrity" class="headerlink" title="Integrity"></a>Integrity</h3><ul>
-<li>You are known for candor, authenticity, transparency, and being non-political</li>
-<li>You only say things about fellow employees that you say to their face</li>
-<li>You admit mistakes freely and openly</li>
-<li>You treat people with respect independent of their status or disagreement with you</li>
-</ul>
-<h3 id="Impact"><a href="#Impact" class="headerlink" title="Impact"></a>Impact</h3><ul>
-<li>You accomplish amazing amounts of important work</li>
-<li>You demonstrate consistently strong performance so colleagues can rely upon you</li>
-<li>You make your colleagues better</li>
-<li>You focus on results over process</li>
-</ul>
-<p>It’s easy to write admirable values; it’s harder to live them. In describing courage we say, <em>“You question actions inconsistent with our values.”</em> We want everyone to help each other live the values and hold each other responsible for being role models. It is a continuous aspirational process.</p>
-<p>In describing integrity we say, <em>“You only say things about fellow employees you say to their face.”</em> This attribute is one of the hardest for new people to believe — and to learn to practice. In most situations, both social and work, those who consistently say what they really think about people are quickly isolated and banished. We work hard to get people to give each other professional, constructive feedback - up, down and across the organization - on a continual basis. Leaders demonstrate that we are all fallible and open to feedback. People frequently ask others, “What could I be doing better?” and themselves, “What feedback have I not yet shared?”</p>
-<p>We believe we will learn faster and be better if we can make giving and receiving feedback less stressful and a more normal part of work life. Feedback is a continuous part of how we communicate and work with one another versus an occasional formal exercise. We build trust by being selfless in giving feedback to our colleagues even if it is uncomfortable to do so. Feedback helps us to avoid sustained misunderstandings and the need for rules. Feedback is more easily exchanged if there is a strong underlying relationship and trust between people, which is part of why we invest time in developing those professional relationships. We celebrate the people who are very candid, especially to those in more powerful positions. We know this level of candor and feedback can be difficult for new hires and people in different parts of the world where direct feedback is uncommon. We actively help people learn how to do this at Netflix through coaching and modeling the behaviors we want to see in every employee.</p>
-<h2 id="Dream-Team"><a href="#Dream-Team" class="headerlink" title="Dream Team"></a>Dream Team</h2><p>A dream team1 is one in which all of your colleagues are extraordinary at what they do and are highly effective collaborators. The value and satisfaction of being on a dream team is tremendous. Our version of the great workplace is not comprised of sushi lunches, great gyms, fancy offices, or frequent parties. Our version of the great workplace is a dream team in pursuit of ambitious common goals, for which we spend heavily. It is on such a team that you learn the most, perform your best work, improve the fastest, and have the most fun.</p>
-<p>To have an entire company comprise the dream team (rather than just a few small groups) is challenging. Unquestionably, we have to hire well. We also have to foster collaboration, embrace a diversity of viewpoints, support information sharing, and discourage politics. The unusual part is that <em>we give adequate performers a generous severance package</em>2 so that we can find a star for that position. If you think of a professional sports team, it is up to the coach to ensure that <em>every</em> player on the field is amazing at their position, and plays very effectively with the others. We model ourselves on being a team, not a family. A family is about unconditional love, despite your siblings’ unusual behavior. A dream team is about pushing yourself to be the best teammate you can be, caring intensely about your teammates, and knowing that you may not be on the team forever.</p>
-<p>We have no bell curves or rankings or quotas such as “cut the bottom 10% every year.” That would be detrimental to fostering collaboration, and is a simplistic, rules-based approach we would never support. We focus on managers’ judgment through the “keeper test” for each of their people: if one of the members of the team was thinking of leaving for another firm, would the manager try hard to keep them from leaving? Those who do not pass the keeper test (i.e. their manager would not fight to keep them) are promptly and respectfully given a generous severance package so we can find someone for that position that makes us an even better dream team. Getting cut from our team is very disappointing, but there is no shame. Being on a dream team can be the thrill of a professional lifetime.</p>
-<p>Given our dream team orientation, it is very important that managers communicate frequently with each of their team members about where they stand so surprises are rare. Also, it is safe for any employee at any time to check in with their manager by asking, “How hard would you work to change my mind if I were thinking of leaving?” In the tension between honesty and kindness, we lean into honesty. No matter how honest, though, we treat people with respect.</p>
-<p>One might assume that with dream team focus, people are afraid of making mistakes. In fact, it’s the opposite. We try all kinds of things and make plenty of mistakes as we search for improvement. The keeper test is applied as a judgment of someone’s overall expected contribution.</p>
-<p>Within a dream team, collaboration and trust work well because your colleagues are both exceptionally skilled at what they do, and at working well with others. In describing selflessness we say <em>“You make time to help colleagues. You share information openly and proactively.”</em> We want new colleagues to feel very welcome and get all the support they need to be effective.</p>
-<p>People like loyalty, and it is great as a stabilizer. Employees with a strong track record at Netflix get leeway if their performance takes a temporary dip. Similarly, we ask employees to stick with Netflix through any short term dips. But unconditional allegiance to a stagnant firm, or to a merely-adequately-performing employee, is not what we are about.</p>
-<p>On a dream team, there are no “brilliant jerks.” The cost to teamwork is just too high. Our view is that brilliant people are also capable of decent human interactions, and we insist upon that. When highly capable people work together in a collaborative context, they inspire each other to be more creative, more productive and ultimately more successful as a team than they could be as a collection of individuals.</p>
-<p>Succeeding on a dream team is about being effective, not about working hard. Sustained “B” performance, despite an “A” for effort, gets a respectful severance package. Sustained “A” performance, even with modest level of effort, gets rewarded. Of course, to be great, most of us have to put in considerable effort, but hard work is not how we measure contribution.</p>
-<p>Being on a dream team is not right for everyone, and that is OK. Many people value job security very highly, and would prefer to work at companies whose orientation is more about stability, seniority, and working around inconsistent employee effectiveness. Our model works best for people who highly value consistent excellence in their colleagues.</p>
-<p>To help us attract and retain stunning colleagues, we pay employees at the top of their personal market. We make a good-faith estimate of the highest compensation each employee could make at peer firms, and pay them that maximum. Typically, we calibrate to market once a year. We do not think of these as “raises” and there is no raise pool to divide up. The market for talent is what it is. We avoid the model of “2% raise for adequate, 4% raise for great”. Some employees’ market value will rapidly rise (due both to their performance and to a shortage of talent in their areas) while other employees may be flat year-to-year, despite doing great work. At all times, we aim to pay all of our people at the top of their personal market.</p>
-<p>Note that if our company experienced financial difficulty, we wouldn’t ask our employees to accept less pay. A sports team with a losing record still pays top of personal market for the players they hope will get them back into a winning position. On the other hand, if the company does well, our broadly distributed stock options become quite valuable.</p>
-<p>The dream team model reinforces the idea that your economic security is based on your skills and reputation, not on your seniority at one company. At Netflix, you learn a lot working on hard problems with amazing colleagues and what you learn increases your market value. Knowing that other companies would quickly hire you if you left Netflix is comforting. We see occasional outside interviewing as healthy, and encourage employees to talk with their managers about what they learn in the process.</p>
-<p>While our teammates are fantastic, and we work together very well, we know we can always do better. We strive to have calm confidence, and yet yearn to improve. We suck compared to how great we want to become.</p>
-<h2 id="Freedom-and-Responsibility"><a href="#Freedom-and-Responsibility" class="headerlink" title="Freedom and Responsibility"></a>Freedom and Responsibility</h2><p>There are companies where people walk by trash on the floor in the office, leaving it for someone else to pick it up, and there are companies where people lean down to pick up the trash they see, as they would at home. We try hard to be the latter, a company where everyone feels a sense of responsibility to do the right thing to help the company at every juncture. Picking up the trash is the metaphor for taking care of problems, small and large, as you see them, and never thinking “that’s not my job.” We don’t have rules about picking up the real or metaphoric trash. We try to create the sense of ownership, responsibility and initiative so that this behavior comes naturally.</p>
-<p>Our goal is to inspire people more than manage them. We trust our teams to do what they think is best for Netflix — giving them lots of freedom, power, and information in support of their decisions. In turn, this generates a sense of responsibility and self-discipline that drives us to do great work that benefits the company.</p>
-<p>We believe that people thrive on being trusted, on freedom, and on being able to make a difference. So we foster freedom and empowerment wherever we can.</p>
-<p>In many organizations, there is an unhealthy emphasis on process and not much freedom. These organizations didn’t start that way, but the python of process squeezed harder every time something went wrong. Specifically, many organizations have freedom and responsibility when they are small. Everyone knows each other, and everyone picks up the trash. As they grow, however, the business gets more complex, and sometimes the average talent and passion level goes down. As the informal, smooth-running organization starts to break down, pockets of chaos emerge, and the general outcry is to “grow up” and add traditional management and process to reduce the chaos. As rules and procedures proliferate, the value system evolves into rule following (i.e. that is how you get rewarded). If this standard management approach is done well, then the company becomes very efficient at its business model — the system is dummy-proofed, and creative thinkers are told to stop questioning the status quo. This kind of organization is very specialized and well adapted to its business model. Eventually, however, over 10 to 100 years, the business model inevitably has to change, and most of these companies are unable to adapt.</p>
-<p>To avoid the rigidity of over-specialization, and avoid the chaos of growth, while retaining freedom, we work to have as simple a business as we can given our growth ambitions, and to keep employee excellence rising. We work to have a company of self-disciplined people who discover and fix issues without being told to do so.</p>
-<p>We are dedicated to constantly increasing employee freedom3 to fight the python of process. Some examples of how we operate with unusual amounts of freedom are:</p>
-<ul>
-<li>We share documents internally broadly and systematically. Nearly every document is fully open for anyone to read and comment on, and everything is cross-linked. Memos on each title’s performance, on every strategy decision, on every competitor, and on every product feature test are open for all employees to read. Despite this huge access, we’ve had very few leaks, due to our ethos of self-discipline and responsibility.</li>
-<li>There are virtually no spending controls or contract signing controls. Each employee is expected to seek advice and perspective as appropriate. “Use good judgment” is our core precept.</li>
-<li>Our policy for travel, entertainment, gifts, and other expenses is 5 words long: “act in Netflix’s best interest.” We also avoid the compliance departments that most companies have to enforce their policies.</li>
-<li>Our vacation policy is “take vacation.” We don’t have any rules or forms around how many weeks per year. Frankly, we intermix work and personal time quite a bit, doing email at odd hours, taking off weekday afternoons for kids’ games, etc. Our leaders make sure they set good examples by taking vacations, often coming back with fresh ideas, and encourage the rest of the team to do the same.</li>
-<li>Our parental leave policy is: “take care of your baby and yourself.” New parents generally take 4-8 months.</li>
-<li>Each employee chooses each year how much of their compensation they want in salary versus stock options. You can choose all cash, all options, or whatever combination suits you4. You choose how much risk and upside you want. These 10-year stock options are fully-vested and you keep them even if you leave Netflix.</li>
-<li>There are no compensation handcuffs (vesting) requiring you to stay in order to get your money. People are free to leave at any time, without loss of money, and yet they overwhelmingly choose to stay. We want managers to create conditions where people love being here, for the great work and great pay.</li>
-</ul>
-<p>You might think that such freedom would lead to chaos. But we also don’t have a clothing policy, yet no one has come to work naked. The lesson is you don’t need policies for everything. Most people understand the benefits of wearing clothes at work.</p>
-<p>There are a few important exceptions to our anti-rules pro-freedom philosophy. We are strict about ethical issues and safety issues. Harassment of employees or trading on insider information are zero tolerance issues, for example. Some information security issues, such as keeping our members’ payment information safe, have strict controls around access. Transferring large amounts of cash from our company bank accounts has strict controls. But these are edge cases.</p>
-<p>In general, freedom and rapid recovery is better than trying to prevent error. We are in a creative business, not a safety-critical business. Our big threat over time is lack of innovation, so we should be relatively error tolerant. Rapid recovery is possible if people have great judgment. The seduction is that error prevention just sounds so good, even if it is often ineffective. We are always on guard if too much error prevention hinders inventive, creative work.</p>
-<p>On rare occasion, freedom is abused. We had one senior employee who organized kickbacks on IT contracts for several years before being caught. But those are the exceptions, and we avoid over-correcting. Just because a few people abuse freedom doesn’t mean that our employees are not worthy of great trust.</p>
-<p>Some processes are about increased productivity, rather than error avoidance, and we like process that helps us get more done. One such process we do well at is effective scheduled meetings. We have a regular cadence of many types of meetings; we start and end on time, and have well-prepared agendas. We use these meetings to learn from each other and get more done, rather than to prevent errors or approve decisions.</p>
-<h2 id="Informed-Captains"><a href="#Informed-Captains" class="headerlink" title="Informed Captains"></a>Informed Captains</h2><p>For every significant decision there is a responsible captain of the ship who makes a judgment call after sharing and digesting others’ views. We avoid committees making decisions because that would slow us down, and diffuse responsibility and accountability. We “farm for dissent.” Dissent is not natural or easy, so we make a concerted effort to stimulate it. Many times, groups will meet about topics and debate them, but then afterwards someone needs to make a decision and be that “captain.” Small decisions may be shared just by email, larger ones will merit a memo with discussion of the various positions, and why the captain made such a decision. The bigger a decision, the more extensive the dissent/assent gathering should be, usually in an open shared document. We are clear, however, that decisions are not made by a majority or committee vote. We don’t wait for consensus, nor do we drive to rapid, uninformed decision making. When the captain of any particular decision is reasonably confident of the right bet for us to take, they decide and we take that bet. Afterwards, it is important for us to reflect on the decision, and see if we could do even better in the future.</p>
-<h2 id="Disagree-Openly"><a href="#Disagree-Openly" class="headerlink" title="Disagree Openly"></a>Disagree Openly</h2><p>If you disagree on a material issue, it is your responsibility to explain why you disagree, ideally in both discussion and in writing. The back and forth of discussion can clarify the different views, and concise writing of the core issues helps people reflect on what is the wise course, as well as making it easy to share views widely. The informed captain on that decision has the responsibility to welcome, understand, and consider your opinions, but may not agree. Once the captain makes a decision, we expect everyone to help make it as successful as possible. Later, if significant new information becomes available, it is fine to ask the captain to revisit the topic. Silent disagreement is unacceptable and unproductive.</p>
-<h2 id="Context-Not-Control"><a href="#Context-Not-Control" class="headerlink" title="Context Not Control"></a>Context Not Control</h2><p>We want employees to be great independent decision makers, and to only consult their manager when they are unsure of the right decision. The leader’s job at every level is to set clear context so that others have the right information to make generally great decisions.</p>
-<p>We don’t buy into the lore of CEOs, or other senior leaders, who are so involved in the details that their product or service becomes amazing. The legend of Steve Jobs was that his micromanagement made the iPhone a great product. Others take it to new extremes, proudly calling themselves nano-managers. The heads of major networks and studios sometimes make many decisions in the creative process of their content. We do not emulate these top-down models because we believe we are most effective and innovative when employees throughout the company make and own decisions.</p>
-<p>We strive to develop good decision-making muscle everywhere in our company. We pride ourselves on how few, not how many, decisions senior management makes. We don’t want hands-off management, though. Each leader’s role is to teach, to set context, and to be highly informed of what is happening. The only way to figure out how the context setting needs to improve is to explore a sample of all the details. But unlike the micro-manager, the goal of knowing those details is not to change certain small decisions, but to learn how to adjust context so more decisions are made well.</p>
-<p>There are some minor exceptions to “context not control,” such as an urgent situation in which there is no time to think about proper context and principles, when a new team member hasn’t yet absorbed enough context to be confident, or when it’s recognized that the wrong person is in a decision-making role (temporarily, no doubt).</p>
-<p>We tell people not to seek to please their boss. Instead, seek to serve the business. It’s OK to disagree with your manager. It’s never OK to hide anything. It’s OK to say to your manager, “I know you disagree, but I’m going to do X because I think it is a better solution. Let me know if you want to specifically override my decision.” What we don’t want is people guessing what their manager would do or want, and then executing on that guess.</p>
-<h2 id="Highly-Aligned-Loosely-Coupled"><a href="#Highly-Aligned-Loosely-Coupled" class="headerlink" title="Highly Aligned, Loosely Coupled"></a>Highly Aligned, Loosely Coupled</h2><p>As companies grow, they often become highly centralized and inflexible. Symptoms include:</p>
-<ul>
-<li>Senior management is involved in many small decisions</li>
-<li>There are numerous cross-departmental buy-in meetings to socialize tactics</li>
-<li>Pleasing other internal groups takes precedence over pleasing customers</li>
-<li>The organization is highly coordinated and less prone to error, but slow and frustrating</li>
-</ul>
-<p>We avoid this by being highly aligned and loosely coupled. We spend lots of time debating strategy together, and then trust each other to execute on tactics without prior approvals. Often, two groups working on the same goals won’t know of, or have approval over, their peer activities. If, later, the activities don’t seem right, we have a candid discussion. We may find that the strategy was too vague or the tactics were not aligned with the agreed strategy. And we discuss generally how we can do better in the future.</p>
-<p>The success of a “Highly Aligned, Loosely Coupled” work environment is dependent upon the collaborative efforts of high performance individuals and effective context. Ultimately, the end goal is to grow the business for bigger impact while increasing flexibility and agility. We seek to be big, fast and nimble.</p>
-<h2 id="Seeking-Excellence"><a href="#Seeking-Excellence" class="headerlink" title="Seeking Excellence"></a>Seeking Excellence</h2><p>New employees often comment in the first few months that they are surprised how accurate this culture description is to the actual culture they experience. Around the world, we live and create our culture together. In fact, hundreds of our global employees contributed to this document.</p>
-<p>We do not seek to preserve our culture — we seek to improve it. Every person who joins us helps to shape and evolve the culture further. We find new ways to accomplish more together. Every few years we can feel a real difference in how much more effectively we are operating than in the past. We are learning faster than ever because we have more dedicated people with diverse perspectives trying to find better ways for our talented team to work together more cohesively, nimbly and effectively.</p>
-<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>As we wrote in the beginning, what is special about Netflix is how much we:</p>
-<ol>
-<li><strong>encourage independent decision-making by employees</strong></li>
-<li><strong>share information openly, broadly, and deliberately</strong></li>
-<li><strong>are extraordinarily candid with each other</strong></li>
-<li><strong>keep only our highly effective people</strong></li>
-<li><strong>avoid rules</strong></li>
-</ol>
-<h2 id="Finally"><a href="#Finally" class="headerlink" title="Finally"></a>Finally</h2><p>Antoine de Saint-Exupéry, the author of <em>The Little Prince</em>, shows us the way:</p>
-<blockquote>
-<h4 id="If-you-want-to-build-a-ship"><a href="#If-you-want-to-build-a-ship" class="headerlink" title="If you want to build a ship,"></a><em>If you want to build a ship,</em></h4><h4 id="don’t-drum-up-the-people"><a href="#don’t-drum-up-the-people" class="headerlink" title="don’t drum up the people"></a><em>don’t drum up the people</em></h4><h4 id="to-gather-wood-divide-the"><a href="#to-gather-wood-divide-the" class="headerlink" title="to gather wood, divide the"></a><em>to gather wood, divide the</em></h4><h4 id="work-and-give-orders"><a href="#work-and-give-orders" class="headerlink" title="work, and give orders."></a><em>work, and give orders.</em></h4><h4 id="Instead-teach-them-to-yearn"><a href="#Instead-teach-them-to-yearn" class="headerlink" title="Instead, teach them to yearn"></a><em>Instead, teach them to yearn</em></h4><h4 id="for-the-vast-and-endless-sea"><a href="#for-the-vast-and-endless-sea" class="headerlink" title="for the vast and endless sea."></a><em>for the vast and endless sea.</em></h4></blockquote>
-<hr>
-<p>1 We don’t mean the 1992 men’s USA olympic basketball team. We mean the team of your dreams.</p>
-<p>2 We generally offer a minimum of four months of full pay as a severance package, giving our ex-teammates time to find a new company.</p>
-<p>3 Mostly for our salaried employees; there are many limitations on this for our hourly employees due to legal requirements.</p>
-<p>4 Sadly, a few Asian countries’ tax laws do not support employee choice.</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1192,7 +1131,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
