@@ -294,6 +294,313 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/21/sql-practice/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="George">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Snapseed.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Live And Thrive">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/21/sql-practice/" itemprop="url">sql_practice</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-08-21T21:49:49-04:00">
+                2019-08-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/SQL/" itemprop="url" rel="index">
+                    <span itemprop="name">SQL</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>–Source Code–<br>CREATE TABLE STUDENT<br>(SNO VARCHAR(3) NOT NULL,<br>SNAME VARCHAR(4) NOT NULL,<br>SSEX VARCHAR(2) NOT NULL,<br>SBIRTHDAY DATETIME,<br>CLASS VARCHAR(5));</p>
+<p>CREATE TABLE COURSE<br>(CNO VARCHAR(5) NOT NULL,<br>CNAME VARCHAR(10) NOT NULL,<br>TNO VARCHAR(10) NOT NULL);</p>
+<p>CREATE TABLE SCORE<br>(SNO VARCHAR(3) NOT NULL,<br>CNO VARCHAR(5) NOT NULL,<br>DEGREE NUMERIC(10, 1) NOT NULL);</p>
+<p>CREATE TABLE TEACHER<br>(TNO VARCHAR(3) NOT NULL,<br>TNAME VARCHAR(4) NOT NULL, TSEX VARCHAR(2) NOT NULL,<br>TBIRTHDAY DATETIME NOT NULL, PROF VARCHAR(6),<br>DEPART VARCHAR(10) NOT NULL);</p>
+<p>INSERT INTO STUDENT (SNO,SNAME,SSEX,SBIRTHDAY,CLASS) VALUES (108 ,’曾华’<br>,’男’ ,’1977-09-01’,95033);<br>INSERT INTO STUDENT (SNO,SNAME,SSEX,SBIRTHDAY,CLASS) VALUES (105 ,’匡明’<br>,’男’ ,’1975-10-02’,95031);<br>INSERT INTO STUDENT (SNO,SNAME,SSEX,SBIRTHDAY,CLASS) VALUES (107 ,’王丽’<br>,’女’ ,’1976-01-23’,95033);<br>INSERT INTO STUDENT (SNO,SNAME,SSEX,SBIRTHDAY,CLASS) VALUES (101 ,’李军’<br>,’男’ ,’1976-02-20’,95033);<br>INSERT INTO STUDENT (SNO,SNAME,SSEX,SBIRTHDAY,CLASS) VALUES (109 ,’王芳’<br>,’女’ ,’1975-02-10’,95031);<br>INSERT INTO STUDENT (SNO,SNAME,SSEX,SBIRTHDAY,CLASS) VALUES (103 ,’陆君’<br>,’男’ ,’1974-06-03’,95031);</p>
+<p>INSERT INTO COURSE(CNO,CNAME,TNO)VALUES (‘3-105’ ,’计算机导论’,825);<br>INSERT INTO COURSE(CNO,CNAME,TNO)VALUES (‘3-245’ ,’操作系统’ ,804);<br>INSERT INTO COURSE(CNO,CNAME,TNO)VALUES (‘6-166’ ,’数据电路’ ,856);<br>INSERT INTO COURSE(CNO,CNAME,TNO)VALUES (‘9-888’ ,’高等数学’ ,100);</p>
+<p>INSERT INTO SCORE(SNO,CNO,DEGREE)VALUES (103,’3-245’,86);<br>INSERT INTO SCORE(SNO,CNO,DEGREE)VALUES (105,’3-245’,75);<br>INSERT INTO SCORE(SNO,CNO,DEGREE)VALUES (109,’3-245’,68);<br>INSERT INTO SCORE(SNO,CNO,DEGREE)VALUES (103,’3-105’,92);<br>INSERT INTO SCORE(SNO,CNO,DEGREE)VALUES (105,’3-105’,88);<br>INSERT INTO SCORE(SNO,CNO,DEGREE)VALUES (109,’3-105’,76);<br>INSERT INTO SCORE(SNO,CNO,DEGREE)VALUES (101,’3-105’,64);<br>INSERT INTO SCORE(SNO,CNO,DEGREE)VALUES (107,’3-105’,91);<br>INSERT INTO SCORE(SNO,CNO,DEGREE)VALUES (108,’3-105’,78);<br>INSERT INTO SCORE(SNO,CNO,DEGREE)VALUES (101,’6-166’,85);<br>INSERT INTO SCORE(SNO,CNO,DEGREE)VALUES (107,’6-106’,79);<br>INSERT INTO SCORE(SNO,CNO,DEGREE)VALUES (108,’6-166’,81);</p>
+<p>INSERT INTO TEACHER(TNO,TNAME,TSEX,TBIRTHDAY,PROF,DEPART)<br>VALUES (804,’李诚’,’男’,’1958-12-02’,’副教授’,’计算机系’);<br>INSERT INTO TEACHER(TNO,TNAME,TSEX,TBIRTHDAY,PROF,DEPART)<br>VALUES (856,’张旭’,’男’,’1969-03-12’,’讲师’,’电子工程系’);<br>INSERT INTO TEACHER(TNO,TNAME,TSEX,TBIRTHDAY,PROF,DEPART)<br>VALUES (825,’王萍’,’女’,’1972-05-05’,’助教’,’计算机系’);<br>INSERT INTO TEACHER(TNO,TNAME,TSEX,TBIRTHDAY,PROF,DEPART)<br>VALUES (831,’刘冰’,’女’,’1977-08-14’,’助教’,’电子工程系’);<br>/*</p>
+<ol>
+<li>查询Student表中所有记录的Sname、Ssex和Class列<br>SELECT<br> SNAME,<br> SSEX,<br> CLASS<br>FROM<br> STUDENT;</li>
+<li>查询教师所有的单位即不重复的Depart列<br>SELECT DISTINCT<br> DEPART<br>FROM<br> TEACHER;</li>
+<li>查询Student表的所有记录<br>SELECT<br> *<br>FROM<br> STUDENT;</li>
+<li>查询Score表中成绩在60到80之间的所有记录<br>SELECT<br> *<br>FROM<br> SCORE<br>WHERE<br> DEGREE BETWEEN 60 AND 80;</li>
+<li>查询Score表中成绩为85，86，或88的记录<br>SELECT<br> *<br>FROM<br> SCORE<br>WHERE<br> DEGREE IN(85, 86, 88);</li>
+<li>查询Student表中“95031”班或性别为“女”的同学记录<br>SELECT<br> *<br>FROM<br> STUDENT<br>WHERE<br> CLASS = 95031<br> OR SSEX = ‘女’;</li>
+<li>以Class降序查询Student表的所有记录<br>SELECT<br> *<br>FROM<br> STUDENT<br>ORDER BY<br> CLASS DESC;</li>
+<li>以Cno升序、Degree降序查询Score表的所有记录<br>SELECT<br> *<br>FROM<br> SCORE<br>ORDER BY<br> CNO ASC,<br> DEGREE DESC;</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/08/03/id3/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="George">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Snapseed.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Live And Thrive">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/08/03/id3/" itemprop="url">ID3</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-08-03T16:07:30-04:00">
+                2019-08-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/machine-learning/" itemprop="url" rel="index">
+                    <span itemprop="name">machine learning</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>An Intuitive Example: What the best day to Play Tennis?<br>Consider a table of data set below. Given the column “Play Tennis” as target attribute, and example of days which such conditions as attributes: Outlook; Temperature; Humidity; and Wind. We want to know what the best day to play tennis.</p>
+<p><img src="http://ww1.sinaimg.cn/large/006tNc79ly1g5n562b6w6j30dq07wgn1.jpg" alt=""><br>￼<br>Training set contains 14 examples</p>
+<p>We want to construct a decision tree of the training set above using ID3 algorithm which has been described before.</p>
+<h1 id="Declaration"><a href="#Declaration" class="headerlink" title="Declaration"></a>Declaration</h1><p>For simplicity, we will give name of each attribute in data set:</p>
+<p>O is Outlook attribute<br>T is Temperature attribute<br>H is Humidity attribute<br>W is Wind attribute</p>
+<h1 id="First-iteration"><a href="#First-iteration" class="headerlink" title="First iteration"></a>First iteration</h1><p>At first iteration, we need to know which is best attribute to be chosen as top root in our decision tree. To do that, ID3 will find the best attribute which is has maximum information gain. Given the information gain for each attribute:<br>attributes = [O, H, W, T]<br>G(x, O) = 0.246<br>G(x, H) = 0.151<br>G(x, W) = 0.048<br>G(x, T) = 0.029<br>So, based on the information gains calculated above, we choose attribute Outlook as first root node which has three branches Sunny, Rain, and Overcast. Our decision tree will look like an image below.</p>
+<p><img src="http://ww2.sinaimg.cn/large/006tNc79ly1g5n4tedv1cj306803xdfp.jpg" alt=""><br>￼</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/24/Python数据化运营/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -836,316 +1143,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/06/Neural Network/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="George">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Snapseed.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live And Thrive">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/04/06/Neural Network/" itemprop="url">Neural Network Notes</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-06T23:30:49-04:00">
-                2019-04-06
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Machine-Learning/" itemprop="url" rel="index">
-                    <span itemprop="name">Machine Learning</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>$$error_{hidden} = W^{T}_{hidden_output} \cdot error_{output} $$</p>
-<p>为了避免终止于错误的山谷或错误的函数最小值，我们从山上的不同点开始，多次训练神经网络，确保并不总是终止于错误的山谷。不同的起始点意味着选择不同的起始参数，在神经网络的情况下，这意味着选择不同的起始链接权重。</p>
-<p>$${\partial E \over \partial w_{j,k} } = {\partial \over \partial w_{j,k}}\sum_{n}(t_{n}-o_{n})^{2}$$</p>
-<p>$$= {\partial \over \partial w_{j,k}}(t_{k}-o_{k})^{2}$$</p>
-<p>($t_{k}$ is a constant)</p>
-<p>($o_{k}$ is the output of the final layer)</p>
-<p>$${\partial E \over \partial w_{j,k} }={\partial E\over \partial o_{k}} \cdot {\partial o_{k} \over \partial w_{j,k}}$$</p>
-<p>$$={-2(t_{k}-o_{k}) \cdot {\partial o_{k} \over \partial w_{j,k}}}$$</p>
-<p>$$= -2(t_{k}-o_{k}) \cdot {\partial \over\partial w_{j,k}}sigmoid(\sum_{j}w_{j,k} \cdot o_{j})$$ </p>
-<p>($o_{j}$ is the output of the hidden layer)</p>
-<p>Tips: ${\partial \over \partial x}sigmoid(x)=sigmoid(x)(1-sigmoid(x)) $</p>
-<p>$${\partial E \over \partial w_{j,k}}={-2(t_{k}-o_{k})} \cdot sigmoid(\sum_{j}w_{j,k} \cdot o_{j})(1-sigmoid(\sum_{j}w_{j,k}) \cdot o_{j})) \cdot {\partial \over \partial w_{j,k}} {(\sum_{j}w_{j,k} \cdot o_{j}) }$$</p>
-<p>$$=-2(t_{k}-o_{k}) \cdot sigmoid(\sum_{j}w_{j,k} \cdot o_{j})(1-sigmoid(\sum_{j}w_{j,k} \cdot o_{j}))\cdot o_{j} $$</p>
-<p>(Hidden to final layer)</p>
-<p>$${\partial E \over \partial w_{i,j} } = -(e_{j}) \cdot sigmoid(\sum_{i}w_{i,j} \cdot o_{i})(1-sigmoid(\sum_{i}w_{i,j} \cdot o_{i})) \cdot o_{i}$$</p>
-<p>(First to Hidden)</p>
-<p>$new\ w_{j,k}=old\ w_{j,k}-\alpha \cdot {\partial E \over \partial w_{j,k}} $</p>
-<p>初始化函数-设定输入层节点、隐藏层节点和输出层节点的数量</p>
-<p>训练-学习给定训练集样本后，优化权重</p>
-<p>查询-给定输入，从输出节点给出答案 </p>
-<p>对于一个问题，应该选择多少个隐藏层节点，并不存在一个最佳方法。同时我们也没有最佳方法选择需要几层隐藏层。目前而言，最好的办法是进行实验，直到找到适合你要解决的问题的一个数字。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/19/Boston/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="George">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Snapseed.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live And Thrive">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/19/Boston/" itemprop="url">Boston</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-19T14:37:07-04:00">
-                2019-03-19
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Photography/" itemprop="url" rel="index">
-                    <span itemprop="name">Photography</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://ww1.sinaimg.cn/large/006tNc79ly1g5299wv9s8j30u0140kjt.jpg"></p>
-<p><img src="http://ww4.sinaimg.cn/large/006tNc79ly1g52kkeswxmj30sg0lc48q.jpg"></p>
-<p><img src="http://ww4.sinaimg.cn/large/006tNc79ly1g52kkoppkaj30sg0lcgtd.jpg"></p>
-<p><img src="http://ww1.sinaimg.cn/large/006tNc79ly1g52kky619bj30sg0lc7c4.jpg"></p>
-<p><img src="http://ww1.sinaimg.cn/large/006tNc79ly1g52kl98qwij30sg0lcjzz.jpg"></p>
-<p><img src="http://ww2.sinaimg.cn/large/006tNc79ly1g52klnsp1hj30sg0lcqbp.jpg"></p>
-<p><img src="http://ww3.sinaimg.cn/large/006tNc79ly1g52klzse73j30sg0lc15i.jpg"></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1198,7 +1195,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">14</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1209,7 +1206,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -1220,7 +1217,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">13</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
