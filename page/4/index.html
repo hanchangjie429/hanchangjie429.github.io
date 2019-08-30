@@ -89,7 +89,7 @@
 
 
 
-  <meta name="keywords" content="Machine Learning,">
+  <meta name="keywords" content="Hexo, NexT">
 
 
 
@@ -100,21 +100,16 @@
 
 
 
-<meta name="description" content="An Intuitive Example: What the best day to Play Tennis?Consider a table of data set below. Given the column “Play Tennis” as target attribute, and example of days which such conditions as attributes:">
-<meta name="keywords" content="Machine Learning">
-<meta property="og:type" content="article">
-<meta property="og:title" content="ID3">
-<meta property="og:url" content="http://www.hhhan.me/2019/08/03/id3/index.html">
+<meta name="description" content="Be Confident And Humble!">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Live And Thrive">
+<meta property="og:url" content="http://www.hhhan.me/page/4/index.html">
 <meta property="og:site_name" content="Live And Thrive">
-<meta property="og:description" content="An Intuitive Example: What the best day to Play Tennis?Consider a table of data set below. Given the column “Play Tennis” as target attribute, and example of days which such conditions as attributes:">
+<meta property="og:description" content="Be Confident And Humble!">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="http://ww1.sinaimg.cn/large/006tNc79ly1g5n562b6w6j30dq07wgn1.jpg">
-<meta property="og:image" content="http://ww2.sinaimg.cn/large/006tNc79ly1g5n4tedv1cj306803xdfp.jpg">
-<meta property="og:updated_time" content="2019-08-22T02:39:49.110Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ID3">
-<meta name="twitter:description" content="An Intuitive Example: What the best day to Play Tennis?Consider a table of data set below. Given the column “Play Tennis” as target attribute, and example of days which such conditions as attributes:">
-<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/006tNc79ly1g5n562b6w6j30dq07wgn1.jpg">
+<meta name="twitter:title" content="Live And Thrive">
+<meta name="twitter:description" content="Be Confident And Humble!">
 
 
 
@@ -144,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="http://www.hhhan.me/2019/08/03/id3/">
+  <link rel="canonical" href="http://www.hhhan.me/page/4/">
 
 
 
 
 
-  <title>ID3 | Live And Thrive</title>
+  <title>Live And Thrive</title>
   
 
 
@@ -169,7 +164,8 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -304,9 +300,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-
-  <div id="posts" class="posts-expand">
+  <section id="posts" class="posts-expand">
     
+      
 
   
 
@@ -319,7 +315,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.hhhan.me/2019/08/03/id3/">
+    <link itemprop="mainEntityOfPage" href="http://www.hhhan.me/2019/01/10/Washington DC/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="George Han">
@@ -336,7 +332,9 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">ID3</h2>
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/01/10/Washington DC/" itemprop="url">Washington DC</a></h2>
         
 
         <div class="post-meta">
@@ -348,8 +346,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-08-03T16:07:30-04:00">
-                2019-08-03
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-10T20:32:19-05:00">
+                2019-01-10
               </time>
             
 
@@ -371,8 +369,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Machine-Learning/" itemprop="url" rel="index">
-                    <span itemprop="name">Machine Learning</span>
+                  <a href="/categories/Photography/" itemprop="url" rel="index">
+                    <span itemprop="name">Photography</span>
                   </a>
                 </span>
 
@@ -408,14 +406,20 @@
       
 
       
-        <p>An Intuitive Example: What the best day to Play Tennis?<br>Consider a table of data set below. Given the column “Play Tennis” as target attribute, and example of days which such conditions as attributes: Outlook; Temperature; Humidity; and Wind. We want to know what the best day to play tennis.</p>
-<p><img src="http://ww1.sinaimg.cn/large/006tNc79ly1g5n562b6w6j30dq07wgn1.jpg" alt=""><br>￼<br>Training set contains 14 examples</p>
-<p>We want to construct a decision tree of the training set above using ID3 algorithm which has been described before.</p>
-<h1 id="Declaration"><a href="#Declaration" class="headerlink" title="Declaration"></a>Declaration</h1><p>For simplicity, we will give name of each attribute in data set:</p>
-<p>O is Outlook attribute<br>T is Temperature attribute<br>H is Humidity attribute<br>W is Wind attribute</p>
-<h1 id="First-iteration"><a href="#First-iteration" class="headerlink" title="First iteration"></a>First iteration</h1><p>At first iteration, we need to know which is best attribute to be chosen as top root in our decision tree. To do that, ID3 will find the best attribute which is has maximum information gain. Given the information gain for each attribute:<br>attributes = [O, H, W, T]<br>G(x, O) = 0.246<br>G(x, H) = 0.151<br>G(x, W) = 0.048<br>G(x, T) = 0.029<br>So, based on the information gains calculated above, we choose attribute Outlook as first root node which has three branches Sunny, Rain, and Overcast. Our decision tree will look like an image below.</p>
-<p><img src="http://ww2.sinaimg.cn/large/006tNc79ly1g5n4tedv1cj306803xdfp.jpg" alt=""><br>￼</p>
+        
+          
+          Today is a wonderful day because I have experienced the beauty and history of a great city, the Washington DC.
+CapitolWhite House
 
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/10/Washington DC/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
       
     </div>
     
@@ -427,61 +431,17 @@
     
 
     
-      <div>
-        <ul class="post-copyright">
-  <li class="post-copyright-author">
-    <strong>Post author:</strong>
-    George Han
-  </li>
-  <li class="post-copyright-link">
-    <strong>Post link:</strong>
-    <a href="http://www.hhhan.me/2019/08/03/id3/" title="ID3">http://www.hhhan.me/2019/08/03/id3/</a>
-  </li>
-  <li class="post-copyright-license">
-    <strong>Copyright Notice: </strong>
-    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
-  </li>
-</ul>
-
-      </div>
-    
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/Machine-Learning/" rel="tag"># Machine Learning</a>
-          
-        </div>
+
+      
+
       
 
       
       
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/06/24/Python数据化运营/" rel="next" title="Python数据化运营">
-                <i class="fa fa-chevron-left"></i> Python数据化运营
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/08/21/sql-practice/" rel="prev" title="SQL_Practice">
-                SQL_Practice <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
+        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -491,11 +451,166 @@
   </article>
 
 
+    
+      
 
-    <div class="post-spread">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.hhhan.me/2019/01/10/New York/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="George Han">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Snapseed.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Live And Thrive">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/01/10/New York/" itemprop="url">New York</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-01-10T00:21:15-05:00">
+                2019-01-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Photography/" itemprop="url" rel="index">
+                    <span itemprop="name">Photography</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          I am a drone pilot. And I am very glad to show you all the footage that I have taken while I fly my DJI Mavic 2.And here are some pictures that I have taken when I was in New York.
+
+
+
+
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/10/New York/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
       
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/3/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
+  </nav>
+
 
 
           </div>
@@ -503,10 +618,6 @@
 
 
           
-
-  
-
-
 
         </div>
         
@@ -527,17 +638,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -621,22 +723,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Declaration"><span class="nav-text">Declaration</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#First-iteration"><span class="nav-text">First iteration</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -786,10 +872,6 @@
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
