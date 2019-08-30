@@ -407,14 +407,8 @@
 
       
         
-          
-          如何给博客作者添加头像？博客头像设置在blog/themes/next/config.yml里面设置，在配置文件里面找到「avatar」并将图片的url放在avatar目录后面，即可添加作者头像到博客中。
-
-
-
-categories 侧栏无法进行超链接解决方法：检查 blog/source/categories/index.md 里面的 type 是否存在异常的空格或者其他字符。
-今天突然发现我的 categories 不能进行超链接，在博客和主题配置文件里弄了半天还是没有解决。随后无意中在运行 hexo server 的时候，发现了一个 FAIL（不是“WARN”） 的提示，提示说在 cat
-          ...
+          <blockquote>
+<p>常见的一些会在hexo中出现的问题<br>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/02/07/Hexo常见问题/#more" rel="contents">
@@ -424,7 +418,7 @@ categories 侧栏无法进行超链接解决方法：检查 blog/source/categori
           <!--/noindex-->
         
       
-    </div>
+    </p></blockquote></div>
     
     
     
@@ -560,15 +554,9 @@ categories 侧栏无法进行超链接解决方法：检查 blog/source/categori
 
       
         
-          
-          最近写了不少文章然后在一次无意点击博客搜索功能的时候，发现搜索一直在加载，却迟迟不显示搜索框。
-
-于是我按照网上的教程，重新安装了一遍 search 插件然后在 config 里面配置了一下搜索功能，结果却不尽人意。
-接着我在 local 服务器里面用审查元素检查了一下搜索功能，发现 search.xml 状态是 200 OK并没有问题。
-然后我进入网址 http://localhost:4000/search.xml 去查询 search.xml 页面下是否有什么问题，果然不出所料，该页面报错，显示 line 52 at column 35 有错误
-
-看样子应该是 utf-8 编码的问题，于
-          ...
+          <blockquote>
+<p>最近写了不少文章然后在一次无意点击博客搜索功能的时候，发现搜索一直在加载，却迟迟不显示搜索框。</p>
+</blockquote>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/01/30/解决hexo搜索加载问题/#more" rel="contents">
@@ -714,24 +702,9 @@ categories 侧栏无法进行超链接解决方法：检查 blog/source/categori
 
       
         
-          
-          标题层级标题分为四级。
-
-一级标题：文章的标题
-二级标题：文章主要部分的大标题
-三级标题：二级标题下面一级的小标题
-四级标题：三级标题下面某一方面的小标题
-
-下面是示例。
-1234567# 一级标题## 二级标题### 三级标题#### 四级标题
-原则（1）一级标题下，不能直接出现三级标题。
-示例：下面的文章结构，缺少二级标题。
-123# 一级标题### 三级标题
-（2）标题要避免孤立编号（即同级标题只有一个）。
-示例：下面的文章结构，二级标题 A只包含一个三级标题，完全可以省略三级标题 A。
-12345## 二级标题 A### 三级标题 A## 二级标题 B
-（3）下级标题不重复上一级标题的
-          ...
+          <blockquote>
+<p>为了阅读方便而产生的在编写中文技术文档的一些规范。</p>
+</blockquote>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2019/01/29/写作规范/#more" rel="contents">
