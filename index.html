@@ -1182,16 +1182,15 @@
       
         
           
-          An Intuitive Example: What the best day to Play Tennis?Consider a table of data set below. Given the column “Play Tennis” as target attribute, and example of days which such conditions as attributes: Outlook; Temperature; Humidity; and Wind. We want to know what the best day to play tennis.
-￼Trainin
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/08/03/id3/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <p>An Intuitive Example: What the best day to Play Tennis?<br>Consider a table of data set below. Given the column “Play Tennis” as target attribute, and example of days which such conditions as attributes: Outlook; Temperature; Humidity; and Wind. We want to know what the best day to play tennis.</p>
+<p><img src="http://ww1.sinaimg.cn/large/006tNc79ly1g5n562b6w6j30dq07wgn1.jpg" alt=""><br>￼<br>Training set contains 14 examples</p>
+<p>We want to construct a decision tree of the training set above using ID3 algorithm which has been described before.</p>
+<h1 id="Declaration"><a href="#Declaration" class="headerlink" title="Declaration"></a>Declaration</h1><p>For simplicity, we will give name of each attribute in data set:</p>
+<p>O is Outlook attribute<br>T is Temperature attribute<br>H is Humidity attribute<br>W is Wind attribute</p>
+<h1 id="First-iteration"><a href="#First-iteration" class="headerlink" title="First iteration"></a>First iteration</h1><p>At first iteration, we need to know which is best attribute to be chosen as top root in our decision tree. To do that, ID3 will find the best attribute which is has maximum information gain. Given the information gain for each attribute:<br>attributes = [O, H, W, T]<br>G(x, O) = 0.246<br>G(x, H) = 0.151<br>G(x, W) = 0.048<br>G(x, T) = 0.029<br>So, based on the information gains calculated above, we choose attribute Outlook as first root node which has three branches Sunny, Rain, and Overcast. Our decision tree will look like an image below.</p>
+<p><img src="http://ww2.sinaimg.cn/large/006tNc79ly1g5n4tedv1cj306803xdfp.jpg" alt=""><br>￼</p>
+
+          
         
       
     </div>
