@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.hhhan.me/2019/09/07/Sorting-Algorithm/</loc>
+    
+    <lastmod>2019-09-07T22:11:37.395Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.hhhan.me/2019/09/07/selection-sort/</loc>
+    
+    <lastmod>2019-09-07T20:54:49.457Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.hhhan.me/2019/09/07/insertion-sort/</loc>
+    
+    <lastmod>2019-09-07T20:54:21.043Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.hhhan.me/2019/09/07/bubble-sort/</loc>
     
-    <lastmod>2019-09-07T18:33:41.406Z</lastmod>
+    <lastmod>2019-09-07T20:54:14.906Z</lastmod>
     
   </url>
   

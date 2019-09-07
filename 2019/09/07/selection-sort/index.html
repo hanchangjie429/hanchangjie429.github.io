@@ -87,7 +87,7 @@
 
 
 
-  <meta name="keywords" content="Hexo,">
+  <meta name="keywords" content="Algorithm,">
 
 
 
@@ -98,22 +98,18 @@
 
 
 
-<meta name="description" content="常见的一些会在hexo中出现的问题">
-<meta name="keywords" content="Hexo">
+<meta name="description" content="selection sortdef selection_sort(mylist):     for i in range(0,len(mylist)):         min_index=i         min_value=mylist[i]         for j in range(i,len(mylist)):             if mylist[j]&amp;lt;min_valu">
+<meta name="keywords" content="Algorithm">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo常见问题汇总">
-<meta property="og:url" content="https://www.hhhan.me/2019/02/07/Hexo常见问题/index.html">
+<meta property="og:title" content="Selection Sort">
+<meta property="og:url" content="https://www.hhhan.me/2019/09/07/selection-sort/index.html">
 <meta property="og:site_name" content="Live And Thrive">
-<meta property="og:description" content="常见的一些会在hexo中出现的问题">
+<meta property="og:description" content="selection sortdef selection_sort(mylist):     for i in range(0,len(mylist)):         min_index=i         min_value=mylist[i]         for j in range(i,len(mylist)):             if mylist[j]&amp;lt;min_valu">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/%E9%85%8D%E7%BD%AE%E6%88%AA%E5%9B%BE.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/%E5%A4%B4%E5%83%8F%E6%88%AA%E5%9B%BE.png">
-<meta property="og:image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/categories.png">
-<meta property="og:updated_time" content="2019-09-01T16:25:34.825Z">
+<meta property="og:updated_time" content="2019-09-07T20:54:49.457Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo常见问题汇总">
-<meta name="twitter:description" content="常见的一些会在hexo中出现的问题">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/%E9%85%8D%E7%BD%AE%E6%88%AA%E5%9B%BE.png">
+<meta name="twitter:title" content="Selection Sort">
+<meta name="twitter:description" content="selection sortdef selection_sort(mylist):     for i in range(0,len(mylist)):         min_index=i         min_value=mylist[i]         for j in range(i,len(mylist)):             if mylist[j]&amp;lt;min_valu">
 
 
 
@@ -143,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="https://www.hhhan.me/2019/02/07/Hexo常见问题/">
+  <link rel="canonical" href="https://www.hhhan.me/2019/09/07/selection-sort/">
 
 
 
 
 
-  <title>Hexo常见问题汇总 | Live And Thrive</title>
+  <title>Selection Sort | Live And Thrive</title>
   
 
 
@@ -318,7 +314,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.hhhan.me/2019/02/07/Hexo常见问题/">
+    <link itemprop="mainEntityOfPage" href="https://www.hhhan.me/2019/09/07/selection-sort/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="George Han">
@@ -335,7 +331,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Hexo常见问题汇总</h2>
+          <h2 class="post-title" itemprop="name headline">Selection Sort</h2>
         
 
         <div class="post-meta">
@@ -347,8 +343,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-07T17:51:29-05:00">
-                2019-02-07
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-07T16:00:26-04:00">
+                2019-09-07
               </time>
             
 
@@ -363,8 +359,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-09-01T12:25:34-04:00">
-                2019-09-01
+              <time title="Post modified" itemprop="dateModified" datetime="2019-09-07T16:54:49-04:00">
+                2019-09-07
               </time>
             
           </span>
@@ -382,8 +378,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Troubleshooting/" itemprop="url" rel="index">
-                    <span itemprop="name">Troubleshooting</span>
+                  <a href="/categories/Algorithm/" itemprop="url" rel="index">
+                    <span itemprop="name">Algorithm</span>
                   </a>
                 </span>
 
@@ -413,7 +409,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  263 words
+                  65 words
                 </span>
               
 
@@ -450,16 +446,21 @@
       
 
       
-        <blockquote>
-<p>常见的一些会在hexo中出现的问题</p>
-</blockquote>
-<a id="more"></a>
-<h2 id="1-如何给博客作者添加头像？"><a href="#1-如何给博客作者添加头像？" class="headerlink" title="1. 如何给博客作者添加头像？"></a>1. 如何给博客作者添加头像？</h2><p>博客头像设置在blog/themes/next/config.yml里面设置，在配置文件里面找到「avatar」并将图片的url放在avatar目录后面，即可添加作者头像到博客中。</p>
-<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/%E9%85%8D%E7%BD%AE%E6%88%AA%E5%9B%BE.png" alt=""></p>
-<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/%E5%A4%B4%E5%83%8F%E6%88%AA%E5%9B%BE.png" alt=""></p>
-<hr>
-<h2 id="2-categories-侧栏无法进行超链接"><a href="#2-categories-侧栏无法进行超链接" class="headerlink" title="2. categories 侧栏无法进行超链接"></a>2. categories 侧栏无法进行超链接</h2><p>解决方法：检查 blog/source/categories/index.md 里面的 type 是否存在异常的空格或者其他字符。</p>
-<p><img src="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/categories.png" alt="">今天突然发现我的 categories 不能进行超链接，在博客和主题配置文件里弄了半天还是没有解决。随后无意中在运行 hexo server 的时候，发现了一个 FAIL（不是“WARN”） 的提示，提示说在 categories 存在一个不能被识别的block，于是我打开 blog/source/categories/index.md 目录，仔细检查了一下 type 栏里 categories 前后是否存在异常，结果果然发现里面有一个异常的 block， 待我删除掉这个 block 以后，再次运行 hexo server， 发现成功运行。</p>
+        <h1 id="selection-sort"><a href="#selection-sort" class="headerlink" title="selection sort"></a>selection sort</h1><pre><code class="python"><span class="function"><span class="keyword">def</span> <span class="title">selection_sort</span><span class="params">(mylist)</span>:</span>
+    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,len(mylist)):
+        min_index=i
+        min_value=mylist[i]
+        <span class="keyword">for</span> j <span class="keyword">in</span> range(i,len(mylist)):
+            <span class="keyword">if</span> mylist[j]&lt;min_value:
+                min_value=mylist[j]
+                min_index=j
+        mylist[i],mylist[min_index]=mylist[min_index],mylist[i]
+
+    <span class="keyword">return</span> mylist
+
+array = [<span class="number">5</span>, <span class="number">6</span>, <span class="number">-1</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">8</span>, <span class="number">10</span>, <span class="number">7</span>, <span class="number">6</span>]
+print(selection_sort(array))
+[<span class="number">-1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">10</span>]</code></pre>
 
       
     </div>
@@ -512,7 +513,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>Post link:</strong>
-    <a href="https://www.hhhan.me/2019/02/07/Hexo常见问题/" title="Hexo常见问题汇总">https://www.hhhan.me/2019/02/07/Hexo常见问题/</a>
+    <a href="https://www.hhhan.me/2019/09/07/selection-sort/" title="Selection Sort">https://www.hhhan.me/2019/09/07/selection-sort/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice: </strong>
@@ -527,7 +528,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+            <a href="/tags/Algorithm/" rel="tag"># Algorithm</a>
           
         </div>
       
@@ -540,8 +541,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/30/解决hexo搜索加载问题/" rel="next" title="解决 Hexo 搜索加载问题">
-                <i class="fa fa-chevron-left"></i> 解决 Hexo 搜索加载问题
+              <a href="/2019/09/07/insertion-sort/" rel="next" title="Insertion Sort">
+                <i class="fa fa-chevron-left"></i> Insertion Sort
               </a>
             
           </div>
@@ -550,8 +551,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/19/Boston/" rel="prev" title="Boston">
-                Boston <i class="fa fa-chevron-right"></i>
+              <a href="/2019/09/07/Sorting-Algorithm/" rel="prev" title="Sort Algorithm - Part1">
+                Sort Algorithm - Part1 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -714,7 +715,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-如何给博客作者添加头像？"><span class="nav-text">1. 如何给博客作者添加头像？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-categories-侧栏无法进行超链接"><span class="nav-text">2. categories 侧栏无法进行超链接</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#selection-sort"><span class="nav-text">selection sort</span></a></li></ol></div>
             
 
           </div>
