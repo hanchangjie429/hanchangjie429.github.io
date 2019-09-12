@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="Live And Thrive">
 <meta property="og:description" content="Today I have submitted an application to a machine learning company called feature labs, and they send me a email to test my code skill through hackerrank-an online coding website. Then I found it’s">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-12T00:19:56.124Z">
+<meta property="og:updated_time" content="2019-09-12T23:16:16.970Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Coding Practice">
 <meta name="twitter:description" content="Today I have submitted an application to a machine learning company called feature labs, and they send me a email to test my code skill through hackerrank-an online coding website. Then I found it’s">
@@ -359,8 +359,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-09-11T20:19:56-04:00">
-                2019-09-11
+              <time title="Post modified" itemprop="dateModified" datetime="2019-09-12T19:16:16-04:00">
+                2019-09-12
               </time>
             
           </span>
@@ -420,7 +420,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  422 words
+                  1.1k words
                 </span>
               
 
@@ -436,7 +436,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  2 mins
+                  5 mins
                 </span>
               
             </div>
@@ -463,6 +463,9 @@
 <blockquote>
 <p>The first 3 questions are sample questions which I used to decorate the style of my blog, and from the 4th question, they are some tough problems or some worth reviewing again problems. I will attach my thoughts about these worth-a-try problems. </p>
 </blockquote>
+<a id="more"></a>
+
+
 <h1 id="Question1-Sock-Merchant"><a href="#Question1-Sock-Merchant" class="headerlink" title="Question1: Sock Merchant"></a><a href="https://www.hackerrank.com/challenges/sock-merchant/problem?h_l=interview&page=4&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup" target="_blank" rel="noopener">Question1: Sock Merchant</a></h1><ol>
 <li><p>Difficulty: Easy</p>
 </li>
@@ -511,13 +514,87 @@
 </li>
 </ol>
 <ul>
-<li><blockquote>
-<p><strong>TypeError: ‘str’ object does not support item assignment</strong><br>字符串并不支持赋值操作，因此可以进行:</p>
-<ol>
+<li><strong>TypeError: ‘str’ object does not support item assignment</strong><br>字符串并不支持赋值操作，因此可以进行:<ul>
 <li>切片操作</li>
-<li>先将字符串转换为list格式，在list上进行赋值操作后，再将list合并为字符串格式<br><a href="https://www.zhihu.com/question/31800070" target="_blank" rel="noopener">知乎上有类似的问答，可供参考</a></li>
+<li>先将字符串转换为list格式，在list上进行赋值操作后，再将list合并为字符串格式</li>
+<li><a href="https://www.zhihu.com/question/31800070" target="_blank" rel="noopener">知乎上有类似的问答，可供参考</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="Question5-Grading-Students"><a href="#Question5-Grading-Students" class="headerlink" title="Question5: Grading Students"></a><a href="https://www.hackerrank.com/challenges/grading/problem" target="_blank" rel="noopener">Question5: Grading Students</a></h1><ol>
+<li><p>Difficulty: Easy</p>
+</li>
+<li><p>Solution</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">gradingStudents</span><span class="params">(grades)</span>:</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> range(len(grades)):</span><br><span class="line">		<span class="keyword">if</span> grades[i]&lt;<span class="number">38</span>:</span><br><span class="line">			grades[i]=grades[i]</span><br><span class="line">		<span class="keyword">else</span>:</span><br><span class="line">			remain=<span class="number">5</span>-grades[i]%<span class="number">5</span> <span class="comment">#这里的remain要小心，5的倍数跟input的差值跟input对5取余数是不一样的</span></span><br><span class="line">			<span class="keyword">if</span> remain&lt;<span class="number">3</span>:</span><br><span class="line">				grades[i]=grades[i]+remain</span><br><span class="line">			<span class="keyword">else</span>:</span><br><span class="line">				grades[i]=grades[i]</span><br><span class="line">	<span class="keyword">return</span> grades</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Tips</p>
+</li>
 </ol>
-</blockquote>
+<ul>
+<li>见代码中的注释</li>
+</ul>
+<h1 id="Question6-Between-Two-Sets"><a href="#Question6-Between-Two-Sets" class="headerlink" title="Question6: Between Two Sets"></a><a href="https://www.hackerrank.com/challenges/between-two-sets/problem" target="_blank" rel="noopener">Question6: Between Two Sets</a></h1><ol>
+<li><p>Difficulty: Easy</p>
+</li>
+<li><p>Solution</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getTotalX</span><span class="params">(a,b)</span>:</span></span><br><span class="line">	min=b[<span class="number">0</span>]</span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> b:</span><br><span class="line">		<span class="keyword">if</span> i&lt;min:</span><br><span class="line">			min=i</span><br><span class="line">	count=<span class="number">0</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,min+<span class="number">1</span>):</span><br><span class="line">		<span class="keyword">for</span> j <span class="keyword">in</span> a:</span><br><span class="line">			<span class="keyword">if</span> i%j!=<span class="number">0</span>:</span><br><span class="line">				<span class="keyword">break</span></span><br><span class="line">		<span class="keyword">else</span>:</span><br><span class="line">			<span class="keyword">for</span> k <span class="keyword">in</span> b:</span><br><span class="line">				<span class="keyword">if</span> k%i!=<span class="number">0</span>:</span><br><span class="line">					<span class="keyword">break</span></span><br><span class="line">			<span class="keyword">else</span>:</span><br><span class="line">				print(j,i,k)</span><br><span class="line">				count+=<span class="number">1</span>				</span><br><span class="line">	<span class="keyword">return</span> count</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Tips</p>
+</li>
+</ol>
+<ul>
+<li>1.公约数和公倍数的求法：因为平时都是求两个数字的公倍数和公约数，这里要求出整个数组的公倍数，公约数，肯定是要用到循环的，（可能能用递归算出来，明天再试一试用递归的方法实现）</li>
+<li>2.循环的判断条件：我会把自己画的流程图贴在这里上面记录了解决这道题的解题思路流程</li>
+<li>3.如何退出循环：<ul>
+<li><a href="https://stackoverflow.com/questions/9979970/why-does-python-use-else-after-for-and-while-loops" target="_blank" rel="noopener">Why does python use ‘else’ after for and while loops?</a></li>
+<li><a href="http://psung.blogspot.com/2007/12/for-else-in-python.html?showComment=1266215899681" target="_blank" rel="noopener">for … else in Python</a></li>
+<li><a href="https://blog.csdn.net/churximi/article/details/51043595" target="_blank" rel="noopener">Python跳出多重循环的方法</a></li>
+</ul>
+</li>
+</ul>
+<h1 id="Question7-Birthday-Chocolate"><a href="#Question7-Birthday-Chocolate" class="headerlink" title="Question7: Birthday Chocolate"></a><a href="https://www.hackerrank.com/challenges/the-birthday-bar/problem" target="_blank" rel="noopener">Question7: Birthday Chocolate</a></h1><ol>
+<li><p>Difficulty: Easy</p>
+</li>
+<li><p>Solution</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">birthday</span><span class="params">(s,d,m)</span>:</span></span><br><span class="line">	count=<span class="number">0</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> range(n-m+<span class="number">1</span>):</span><br><span class="line">		sum=<span class="number">0</span>		</span><br><span class="line">		<span class="keyword">for</span> j <span class="keyword">in</span> range(i,i+m):<span class="comment"># 第二次循环要注意循环长度</span></span><br><span class="line">			sum+=s[j]</span><br><span class="line">		<span class="keyword">if</span> sum==d:</span><br><span class="line">			count+=<span class="number">1</span></span><br><span class="line">	<span class="keyword">return</span> count</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Tips</p>
+</li>
+</ol>
+<ul>
+<li>见代码中的注释</li>
+</ul>
+<h1 id="Question8-Divisible-Sum-Pairs"><a href="#Question8-Divisible-Sum-Pairs" class="headerlink" title="Question8: Divisible Sum Pairs"></a><a href="https://www.hackerrank.com/challenges/divisible-sum-pairs/problem" target="_blank" rel="noopener">Question8: Divisible Sum Pairs</a></h1><ol>
+<li><p>Difficulty: Easy</p>
+</li>
+<li><p>Solution</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 错误示范</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">divisibleSumPairs</span><span class="params">(n,k,ar)</span>:</span></span><br><span class="line">	count=<span class="number">0</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> range(n<span class="number">-1</span>):</span><br><span class="line">		i=ar[i] <span class="comment"># 一定要注意 不要把计数器名字和变量的名字混淆了</span></span><br><span class="line">		print(i)</span><br><span class="line">		<span class="keyword">for</span> k <span class="keyword">in</span> range(i+<span class="number">1</span>,n):<span class="comment"># 不然会导致循环计数出错</span></span><br><span class="line">			j=ar[k]</span><br><span class="line">			print(j)</span><br><span class="line">			print(<span class="string">'---'</span>)</span><br><span class="line">			<span class="keyword">if</span> (i+j)%k==<span class="number">0</span>:</span><br><span class="line">				count+=<span class="number">1</span></span><br><span class="line">	<span class="keyword">return</span> count</span><br><span class="line"></span><br><span class="line"><span class="comment"># 正确代码</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">divisibleSumPairs</span><span class="params">(n,k,ar)</span>:</span></span><br><span class="line">	count=<span class="number">0</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> range(n<span class="number">-1</span>):</span><br><span class="line">		a=ar[i] </span><br><span class="line">		<span class="keyword">for</span> j <span class="keyword">in</span> range(i+<span class="number">1</span>,n):</span><br><span class="line">			b=ar[j]</span><br><span class="line">			<span class="keyword">if</span> (a+b)%k==<span class="number">0</span>:</span><br><span class="line">				count+=<span class="number">1</span></span><br><span class="line">	<span class="keyword">return</span> count</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Tips</p>
+</li>
+</ol>
+<ul>
+<li>这道题犯的错很有代表性，新手在写代码的时候很容易随意给变量取名字，这就会导致出现跟系统内置变量名重复，或者跟计数器变量重复的情况，具体python代码规范可以参考<a href="https://www.python.org/dev/peps/pep-0008/" target="_blank" rel="noopener">pep8</a></li>
+</ul>
+<h1 id="Question9-Migratory-Birds"><a href="#Question9-Migratory-Birds" class="headerlink" title="Question9: Migratory Birds"></a><a href="https://www.hackerrank.com/challenges/migratory-birds/problem" target="_blank" rel="noopener">Question9: Migratory Birds</a></h1><ol>
+<li><p>Difficulty: Easy</p>
+</li>
+<li><p>Solution</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># This is the answer of someone else rather than my code, cuz I failed to finish this challenge.</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">migratoryBirds</span><span class="params">(arr)</span>:</span></span><br><span class="line">	count = [<span class="number">0</span>]*<span class="number">6</span></span><br><span class="line">	<span class="keyword">for</span> t <span class="keyword">in</span> arr:</span><br><span class="line">	    count[t] += <span class="number">1</span></span><br><span class="line">	print(count.index(max(count)))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Tips</p>
+</li>
+</ol>
+<ul>
+<li>问题1: 如何能够找到出现次数最多的元素; </li>
+<li>问题2: 如何能够控制运行时间尽可能短，时间复杂度尽可能小</li>
+<li><a href="https://www.hackerrank.com/challenges/migratory-birds/editorial" target="_blank" rel="noopener">标准答案</a></li>
+<li><a href="https://www.hackerrank.com/challenges/migratory-birds/forum" target="_blank" rel="noopener">Other Solutions</a></li>
+<li>Other reference related to this question(如何输出列表中出现次数最多的元素):<ul>
+<li><a href="https://blog.csdn.net/my2010Sam/article/details/8505943" target="_blank" rel="noopener">输出列表中出现次数最多的元素</a></li>
+<li><a href="https://blog.csdn.net/ZK_J1994/article/details/73929547" target="_blank" rel="noopener">找出一个列表中出现次数最多的元素</a></li>
+<li><a href="https://blog.csdn.net/xie_0723/article/details/51692806" target="_blank" rel="noopener">找出序列中出现次数最多的元素方法</a></li>
+</ul>
 </li>
 </ul>
 
@@ -774,7 +851,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Question1-Sock-Merchant"><span class="nav-text">Question1: Sock Merchant</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Question2-Simple-Array-Sum"><span class="nav-text">Question2: Simple Array Sum</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Question3-Compare-the-Triplets"><span class="nav-text">Question3: Compare the Triplets</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Question4-Time-Conversion"><span class="nav-text">Question4: Time Conversion</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Question1-Sock-Merchant"><span class="nav-text">Question1: Sock Merchant</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Question2-Simple-Array-Sum"><span class="nav-text">Question2: Simple Array Sum</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Question3-Compare-the-Triplets"><span class="nav-text">Question3: Compare the Triplets</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Question4-Time-Conversion"><span class="nav-text">Question4: Time Conversion</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Question5-Grading-Students"><span class="nav-text">Question5: Grading Students</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Question6-Between-Two-Sets"><span class="nav-text">Question6: Between Two Sets</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Question7-Birthday-Chocolate"><span class="nav-text">Question7: Birthday Chocolate</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Question8-Divisible-Sum-Pairs"><span class="nav-text">Question8: Divisible Sum Pairs</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Question9-Migratory-Birds"><span class="nav-text">Question9: Migratory Birds</span></a></li></ol></div>
             
 
           </div>
@@ -815,7 +892,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">20.4k</span>
+    <span title="Site words total count">21.1k</span>
   
 
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
