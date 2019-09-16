@@ -565,8 +565,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-09-07T18:11:37-04:00">
-                2019-09-07
+              <time title="Post modified" itemprop="dateModified" datetime="2019-09-15T21:55:25-04:00">
+                2019-09-15
               </time>
             
           </span>
@@ -615,7 +615,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  751 words
+                  754 words
                 </span>
               
 
@@ -653,46 +653,17 @@
 
       
         
-          
-            <blockquote>
+          <blockquote>
 <p>Firstly, I am going to provide an algorithm visualization website for you guys to fully understand algorithm.<br>先提供一个算法过程动态图的网站供大家理解算法</p>
 <p>All algorithms included in this blogs can be accessed through <a href="https://visualgo.net/" target="_blank" rel="noopener">visualgo</a><br>本文涉及的算法可视化可以参考算法动态图<a href="https://visualgo.net/" target="_blank" rel="noopener">visualgo</a></p>
 </blockquote>
-<h2 id="Summary"><a href="#Summary" class="headerlink" title="Summary"></a>Summary</h2><p>The algorithms that we are going to talk about today are <a href="https://en.m.wikipedia.org/wiki/Bubble_sort" target="_blank" rel="noopener">Bubble sort</a>, <a href="https://en.m.wikipedia.org/wiki/Insertion_sort" target="_blank" rel="noopener">Insertion sort</a> and <a href="https://en.m.wikipedia.org/wiki/Selection_sort" target="_blank" rel="noopener">Selection sort</a>.</p>
-<h3 id="1-Bubble-Sort-冒泡排序"><a href="#1-Bubble-Sort-冒泡排序" class="headerlink" title="1.Bubble Sort(冒泡排序)"></a>1.Bubble Sort(冒泡排序)</h3><h4 id="1-排序原理"><a href="#1-排序原理" class="headerlink" title="1. 排序原理"></a>1. 排序原理</h4><ul>
-<li>冒泡排序只会操作相邻的两个数据</li>
-<li>对相邻两个数据进行比较，看是否满足大小关系，若不满足则将他俩互换位置</li>
-<li>一次冒泡排序会让至少一个元素移动到他应该在的位置，重复n-1次就能完成所有数据的排序工作，这也是为什么外循环次数是n-1次</li>
-<li><strong>优化操作</strong>：若某次冒泡排序操作不存在数据交换，则说明数列已经达到完全有序状态</li>
-</ul>
-<h4 id="2-代码实现（Python）"><a href="#2-代码实现（Python）" class="headerlink" title="2. 代码实现（Python）"></a>2. 代码实现（Python）</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bubble_sort</span><span class="params">(mylist)</span>:</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,len(mylist)):</span><br><span class="line">		<span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">0</span>,len(mylist)-i):</span><br><span class="line">			<span class="keyword">if</span> mylist[j]&gt;mylist[j+<span class="number">1</span>]:</span><br><span class="line">				mylist[j],mylist[j+<span class="number">1</span>]=mylist[j+<span class="number">1</span>],mylist[j]</span><br><span class="line">	<span class="keyword">return</span> mylist</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-性能分析"><a href="#3-性能分析" class="headerlink" title="3. 性能分析"></a>3. 性能分析</h4><ul>
-<li><p><strong>执行效率</strong>：最小时间复杂度、最大时间复杂度、平均时间复杂度<br>最小时间复杂度：数据完全有序时，只需一次冒泡操作即可，时间复杂度是O(n)<br>最大时间复杂度：数据完全倒序时，需要n-1次冒泡操作，时间复杂度是O(n^2)<br>平均时间复杂度：O(n^2) <em>待讨论</em></p>
-</li>
-<li><p><strong>空间复杂度</strong>：每次交换仅需一个临时变量，不申请额外的内存空间，故空间复杂度为O(1)，是<a href="https://baike.baidu.com/item/原地排序" target="_blank" rel="noopener">原地排序算法</a></p>
-</li>
-<li><p><strong>算法稳定性</strong>：如果两个值相等，就不会交换位置，故是<a href="https://baike.baidu.com/item/稳定排序" target="_blank" rel="noopener">稳定排序算法</a></p>
-</li>
-</ul>
-<h3 id="2-Insertion-Sort-插入排序"><a href="#2-Insertion-Sort-插入排序" class="headerlink" title="2.Insertion Sort(插入排序)"></a>2.Insertion Sort(插入排序)</h3><h4 id="1-排序原理-1"><a href="#1-排序原理-1" class="headerlink" title="1.排序原理"></a>1.排序原理</h4><ul>
-<li>将数组中的数据分为两个区间，已排序区间和未排序区间</li>
-<li>初始已排序区间只有一个元素，即数组的第一个元素</li>
-<li>依此取未排序区间的元素，在已排序区间找合适的位置插入，保证已排序区间的元素一直有序</li>
-<li>重复操作直至未排序元素为空</li>
-</ul>
-<h4 id="2-代码实现-Python"><a href="#2-代码实现-Python" class="headerlink" title="2. 代码实现(Python)"></a>2. 代码实现(Python)</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">insertion_sort</span><span class="params">(mylist)</span>:</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,len(mylist)):</span><br><span class="line">		<span class="keyword">for</span> j <span class="keyword">in</span> range(i<span class="number">-1</span>,<span class="number">-1</span>,<span class="number">-1</span>):</span><br><span class="line">			<span class="keyword">if</span> mylist[j]&gt;mylist[j+<span class="number">1</span>]:</span><br><span class="line">				mylist[j],mylist[j+<span class="number">1</span>]=mylist[j+<span class="number">1</span>],mylist[j]</span><br><span class="line">	<span class="keyword">return</span> mylist</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-性能分析-1"><a href="#3-性能分析-1" class="headerlink" title="3. 性能分析"></a>3. 性能分析</h4><ul>
-<li><p><strong>时间复杂度</strong>：最小时间复杂度、最大时间复杂度、平均时间复杂度</p>
-</li>
-<li><p><strong>空间复杂度</strong>：和冒泡排序一样，不需要任何额外的内存空间，因此空间复杂的为O(1),是原地排序算法</p>
-</li>
-<li><p><strong>算法稳定性</strong>：在插入排序中，对于值相同的元素，我们可以选择将后面出现的元素，插入到前面元素的后面，这样就保持原有的顺序不变，所以是稳定的</p>
-</li>
-</ul>
-<h3 id="3-Selection-Sort-选择排序"><a href="#3-Selection-Sort-选择排序" class="headerlink" title="3.Selection Sort(选择排序)"></a>3.Selection Sort(选择排序)</h3>
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/09/07/Sorting-Algorithm/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
