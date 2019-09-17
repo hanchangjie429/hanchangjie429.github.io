@@ -98,16 +98,14 @@
 
 
 
-<meta name="description" content="Be Confident And Humble!">
+<meta name="keywords" content="Peace &amp; Love">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Live And Thrive">
+<meta property="og:title" content="George&#39;s Blog">
 <meta property="og:url" content="https://www.hhhan.me/page/2/index.html">
-<meta property="og:site_name" content="Live And Thrive">
-<meta property="og:description" content="Be Confident And Humble!">
+<meta property="og:site_name" content="George&#39;s Blog">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Live And Thrive">
-<meta name="twitter:description" content="Be Confident And Humble!">
+<meta name="twitter:title" content="George&#39;s Blog">
 
 
 
@@ -143,7 +141,7 @@
 
 
 
-  <title>Live And Thrive</title>
+  <title>George's Blog</title>
   
 
 
@@ -174,12 +172,12 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Live And Thrive</span>
+        <span class="site-title">George's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <h1 class="site-subtitle" itemprop="description"></h1>
+        <h1 class="site-subtitle" itemprop="description">Live & Thrive</h1>
       
   </div>
 
@@ -313,6 +311,198 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.hhhan.me/2019/09/07/bubble-sort/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="George Han">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Snapseed.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="George's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/09/07/bubble-sort/" itemprop="url">Bubble Sort</a></h2>
+        
+
+        <div class="post-meta">
+          
+
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-09-07T14:28:04-04:00">
+                2019-09-07
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2019-09-07T16:54:14-04:00">
+                2019-09-07
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Algorithm/" itemprop="url" rel="index">
+                    <span itemprop="name">Algorithm</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  188 words
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  1 mins
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="三步搞定冒泡排序"><a href="#三步搞定冒泡排序" class="headerlink" title="三步搞定冒泡排序"></a>三步搞定冒泡排序</h1><h2 id="1-弄清楚外循环次数-i"><a href="#1-弄清楚外循环次数-i" class="headerlink" title="1. 弄清楚外循环次数 i"></a>1. 弄清楚外循环次数 i</h2><p>外循环次数等于 数组长度-1</p>
+<h2 id="2-弄清楚内循环次数-j"><a href="#2-弄清楚内循环次数-j" class="headerlink" title="2. 弄清楚内循环次数 j"></a>2. 弄清楚内循环次数 j</h2><p>内循环次数等于 列表长度-1-外循环计数</p>
+<h2 id="3-弄清楚换值条件-if"><a href="#3-弄清楚换值条件-if" class="headerlink" title="3. 弄清楚换值条件 if"></a>3. 弄清楚换值条件 if</h2><p>换值条件为前一个数大于（或小于，取决于你的冒泡排序是顺序还是逆序）后一个数</p>
+<p><strong>outer loop: i = 0 to n-1<br>    inner loop: j = 0 to n-1-i</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">bubbleSort</span><span class="params">(mylist)</span>:</span></span><br><span class="line">	<span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,len(mylist)<span class="number">-1</span>): <span class="comment"># outer loop</span></span><br><span class="line">		<span class="keyword">for</span> j <span class="keyword">in</span> range(<span class="number">0</span>,len(mylist)-i<span class="number">-1</span>): <span class="comment"># inner loop</span></span><br><span class="line">			<span class="keyword">if</span> mylist[j]&gt;mylist[j+<span class="number">1</span>]: <span class="comment"># swap case</span></span><br><span class="line">				mylist[j],mylist[j+<span class="number">1</span>]=mylist[j+<span class="number">1</span>],mylist[j] <span class="comment"># swap</span></span><br><span class="line">	<span class="keyword">return</span> mylist</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">array = [<span class="number">5</span>, <span class="number">6</span>, <span class="number">-1</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">8</span>, <span class="number">10</span>, <span class="number">7</span>, <span class="number">6</span>, <span class="number">0</span>, <span class="number">101</span>, <span class="number">-102</span>]</span><br><span class="line">print(bubbleSort(array))</span><br><span class="line">[<span class="number">-102</span>, <span class="number">-1</span>, <span class="number">0</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">10</span>, <span class="number">101</span>]</span><br></pre></td></tr></table></figure>
+
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://www.hhhan.me/2019/09/01/python数据化运营/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -322,7 +512,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live And Thrive">
+      <meta itemprop="name" content="George's Blog">
     </span>
 
     
@@ -336,6 +526,8 @@
         
 
         <div class="post-meta">
+          
+
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -518,7 +710,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live And Thrive">
+      <meta itemprop="name" content="George's Blog">
     </span>
 
     
@@ -532,6 +724,8 @@
         
 
         <div class="post-meta">
+          
+
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -709,7 +903,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live And Thrive">
+      <meta itemprop="name" content="George's Blog">
     </span>
 
     
@@ -723,6 +917,8 @@
         
 
         <div class="post-meta">
+          
+
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -898,7 +1094,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live And Thrive">
+      <meta itemprop="name" content="George's Blog">
     </span>
 
     
@@ -912,6 +1108,8 @@
         
 
         <div class="post-meta">
+          
+
           <span class="post-time">
             
               <span class="post-meta-item-icon">
@@ -1067,197 +1265,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.hhhan.me/2019/08/28/Ted-Talk-Everyday/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="George Han">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Snapseed.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Live And Thrive">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/08/28/Ted-Talk-Everyday/" itemprop="url">Ted Talk Subtitles</a></h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-08-28T13:40:53-04:00">
-                2019-08-28
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Post modified&#58;</span>
-              
-              <time title="Post modified" itemprop="dateModified" datetime="2019-09-01T12:24:30-04:00">
-                2019-09-01
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/English-Learning/" itemprop="url" rel="index">
-                    <span itemprop="name">English Learning</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Words count in article&#58;</span>
-                
-                <span title="Words count in article">
-                  1.4k words
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Reading time &asymp;</span>
-                
-                <span title="Reading time">
-                  8 mins
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <blockquote>
-<p>From today, I am going to listen Ted Talk every day. No matter how long one episode is, I will listen and take notes on 3 minutes of that episode. I have calculated it that it takes me about an hour to finish this daily listening task. And here is the First Ted Talk that I am going to share, it is about climate change.</p>
-</blockquote>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2019/08/28/Ted-Talk-Everyday/#more" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1310,7 +1317,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-count">24</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1442,6 +1449,8 @@
   <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
+
+  <div class="footer-custom">Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a></div>
 
 
         
