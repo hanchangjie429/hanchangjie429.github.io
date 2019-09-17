@@ -98,18 +98,18 @@
 
 
 
-<meta name="description" content="insertion sortouter loop (1,length)inner loop (i-1,-1,-1) def insertion_sort(mylist):     for i in range(1,len(mylist)):         for j in range(i-1,-1,-1):             if mylist[j]&amp;gt;mylist[j+1]:">
+<meta name="description" content="insertion sortouter loop (1,length)inner loop (i-1,-1,-1) `pythondef insertion_sort(mylist):    for i in range(1,len(mylist)):        for j in range(i-1,-1,-1):            if mylist[j]&amp;gt;mylist[j+1]:">
 <meta name="keywords" content="Algorithm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Insertion Sort">
 <meta property="og:url" content="https://www.hhhan.me/2019/09/07/insertion-sort/index.html">
 <meta property="og:site_name" content="George&#39;s Blog">
-<meta property="og:description" content="insertion sortouter loop (1,length)inner loop (i-1,-1,-1) def insertion_sort(mylist):     for i in range(1,len(mylist)):         for j in range(i-1,-1,-1):             if mylist[j]&amp;gt;mylist[j+1]:">
+<meta property="og:description" content="insertion sortouter loop (1,length)inner loop (i-1,-1,-1) `pythondef insertion_sort(mylist):    for i in range(1,len(mylist)):        for j in range(i-1,-1,-1):            if mylist[j]&amp;gt;mylist[j+1]:">
 <meta property="og:locale" content="en">
 <meta property="og:updated_time" content="2019-09-07T20:54:21.043Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Insertion Sort">
-<meta name="twitter:description" content="insertion sortouter loop (1,length)inner loop (i-1,-1,-1) def insertion_sort(mylist):     for i in range(1,len(mylist)):         for j in range(i-1,-1,-1):             if mylist[j]&amp;gt;mylist[j+1]:">
+<meta name="twitter:description" content="insertion sortouter loop (1,length)inner loop (i-1,-1,-1) `pythondef insertion_sort(mylist):    for i in range(1,len(mylist)):        for j in range(i-1,-1,-1):            if mylist[j]&amp;gt;mylist[j+1]:">
 
 
 
@@ -449,17 +449,8 @@
 
       
         <h1 id="insertion-sort"><a href="#insertion-sort" class="headerlink" title="insertion sort"></a>insertion sort</h1><p><strong>outer loop (1,length)<br>inner loop (i-1,-1,-1)</strong></p>
-<pre><code class="python"><span class="function"><span class="keyword">def</span> <span class="title">insertion_sort</span><span class="params">(mylist)</span>:</span>
-    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,len(mylist)):
-        <span class="keyword">for</span> j <span class="keyword">in</span> range(i<span class="number">-1</span>,<span class="number">-1</span>,<span class="number">-1</span>):
-            <span class="keyword">if</span> mylist[j]&gt;mylist[j+<span class="number">1</span>]:
-                mylist[j],mylist[j+<span class="number">1</span>]=mylist[j+<span class="number">1</span>],mylist[j]
-    <span class="keyword">return</span> mylist
-
-array = [<span class="number">5</span>, <span class="number">6</span>, <span class="number">-1</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">8</span>, <span class="number">10</span>, <span class="number">7</span>, <span class="number">6</span>]
-print(insertion_sort(array))
-[<span class="number">-1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">10</span>]
-</code></pre>
+<p><code>`</code>python<br>def insertion_sort(mylist):<br>    for i in range(1,len(mylist)):<br>        for j in range(i-1,-1,-1):<br>            if mylist[j]&gt;mylist[j+1]:<br>                mylist[j],mylist[j+1]=mylist[j+1],mylist[j]<br>    return mylist</p>
+<p>array = [5, 6, -1, 4, 2, 8, 10, 7, 6]<br>print(insertion_sort(array))<br>[-1, 2, 4, 5, 6, 6, 7, 8, 10]</p>
 
       
     </div>
@@ -755,7 +746,7 @@ print(insertion_sort(array))
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">22.7k</span>
+    <span title="Site words total count">23.1k</span>
   
 
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">

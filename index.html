@@ -364,7 +364,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2019-09-17T00:45:09-04:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2019-09-17T19:28:12-04:00">
                 2019-09-17
               </time>
             
@@ -392,7 +392,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  0 words
+                  290 words
                 </span>
               
 
@@ -430,9 +430,14 @@
 
       
         
-          
-            <iframe width="754" height="480" src="https://www.youtube.com/embed/HK7SPnGSxLM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          
+          <iframe width="754" height="480" src="https://www.youtube.com/embed/HK7SPnGSxLM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/09/16/「说好不哭」/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -578,7 +583,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  2.8k words
+                  2.9k words
                 </span>
               
 
@@ -594,7 +599,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  14 mins
+                  15 mins
                 </span>
               
             </div>
@@ -968,7 +973,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  65 words
+                  66 words
                 </span>
               
 
@@ -1007,21 +1012,9 @@
       
         
           
-            <h1 id="selection-sort"><a href="#selection-sort" class="headerlink" title="selection sort"></a>selection sort</h1><pre><code class="python"><span class="function"><span class="keyword">def</span> <span class="title">selection_sort</span><span class="params">(mylist)</span>:</span>
-    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">0</span>,len(mylist)):
-        min_index=i
-        min_value=mylist[i]
-        <span class="keyword">for</span> j <span class="keyword">in</span> range(i,len(mylist)):
-            <span class="keyword">if</span> mylist[j]&lt;min_value:
-                min_value=mylist[j]
-                min_index=j
-        mylist[i],mylist[min_index]=mylist[min_index],mylist[i]
-
-    <span class="keyword">return</span> mylist
-
-array = [<span class="number">5</span>, <span class="number">6</span>, <span class="number">-1</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">8</span>, <span class="number">10</span>, <span class="number">7</span>, <span class="number">6</span>]
-print(selection_sort(array))
-[<span class="number">-1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">10</span>]</code></pre>
+            <h1 id="selection-sort"><a href="#selection-sort" class="headerlink" title="selection sort"></a>selection sort</h1><p><code>`</code>python<br>def selection_sort(mylist):<br>    for i in range(0,len(mylist)):<br>        min_index=i<br>        min_value=mylist[i]<br>        for j in range(i,len(mylist)):<br>            if mylist[j]&lt;min_value:<br>                min_value=mylist[j]<br>                min_index=j<br>        mylist[i],mylist[min_index]=mylist[min_index],mylist[i]</p>
+<pre><code>return mylist
+</code></pre><p>array = [5, 6, -1, 4, 2, 8, 10, 7, 6]<br>print(selection_sort(array))<br>[-1, 2, 4, 5, 6, 6, 7, 8, 10]</p>
 
           
         
@@ -1209,17 +1202,8 @@ print(selection_sort(array))
         
           
             <h1 id="insertion-sort"><a href="#insertion-sort" class="headerlink" title="insertion sort"></a>insertion sort</h1><p><strong>outer loop (1,length)<br>inner loop (i-1,-1,-1)</strong></p>
-<pre><code class="python"><span class="function"><span class="keyword">def</span> <span class="title">insertion_sort</span><span class="params">(mylist)</span>:</span>
-    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">1</span>,len(mylist)):
-        <span class="keyword">for</span> j <span class="keyword">in</span> range(i<span class="number">-1</span>,<span class="number">-1</span>,<span class="number">-1</span>):
-            <span class="keyword">if</span> mylist[j]&gt;mylist[j+<span class="number">1</span>]:
-                mylist[j],mylist[j+<span class="number">1</span>]=mylist[j+<span class="number">1</span>],mylist[j]
-    <span class="keyword">return</span> mylist
-
-array = [<span class="number">5</span>, <span class="number">6</span>, <span class="number">-1</span>, <span class="number">4</span>, <span class="number">2</span>, <span class="number">8</span>, <span class="number">10</span>, <span class="number">7</span>, <span class="number">6</span>]
-print(insertion_sort(array))
-[<span class="number">-1</span>, <span class="number">2</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">10</span>]
-</code></pre>
+<p><code>`</code>python<br>def insertion_sort(mylist):<br>    for i in range(1,len(mylist)):<br>        for j in range(i-1,-1,-1):<br>            if mylist[j]&gt;mylist[j+1]:<br>                mylist[j],mylist[j+1]=mylist[j+1],mylist[j]<br>    return mylist</p>
+<p>array = [5, 6, -1, 4, 2, 8, 10, 7, 6]<br>print(insertion_sort(array))<br>[-1, 2, 4, 5, 6, 6, 7, 8, 10]</p>
 
           
         
@@ -1415,7 +1399,7 @@ print(insertion_sort(array))
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">22.7k</span>
+    <span title="Site words total count">23.1k</span>
   
 
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
