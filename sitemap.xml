@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.hhhan.me/2019/09/11/coding-practice/</loc>
+    
+    <lastmod>2019-09-19T13:51:36.724Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.hhhan.me/2019/09/07/insertion-sort/</loc>
     
     <lastmod>2019-09-18T00:15:20.950Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>https://www.hhhan.me/2019/09/16/%E3%80%8C%E8%AF%B4%E5%A5%BD%E4%B8%8D%E5%93%AD%E3%80%8D/</loc>
     
     <lastmod>2019-09-17T23:28:12.031Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.hhhan.me/2019/09/11/coding-practice/</loc>
-    
-    <lastmod>2019-09-17T04:44:09.170Z</lastmod>
     
   </url>
   
