@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.hhhan.me/2019/09/21/Hiking-Trip-Week-2/</loc>
+    
+    <lastmod>2019-09-23T16:20:29.889Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.hhhan.me/2019/09/14/Hiking-Trip-Week-1/</loc>
+    
+    <lastmod>2019-09-23T16:19:10.123Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.hhhan.me/2019/09/11/coding-practice/</loc>
     
-    <lastmod>2019-09-19T13:57:55.920Z</lastmod>
+    <lastmod>2019-09-23T16:04:09.965Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.hhhan.me/about/index.html</loc>
+    
+    <lastmod>2019-09-23T14:45:50.189Z</lastmod>
     
   </url>
   
@@ -19,13 +40,6 @@
     <loc>https://www.hhhan.me/2019/09/07/selection-sort/</loc>
     
     <lastmod>2019-09-18T00:14:54.805Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.hhhan.me/about/index.html</loc>
-    
-    <lastmod>2019-09-18T00:13:55.358Z</lastmod>
     
   </url>
   
