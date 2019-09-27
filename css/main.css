@@ -557,7 +557,7 @@ pre,
 }
 pre,
 code {
-  font-family: 'Comic Sans MS', consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
+  font-family: 'Garamond', consolas, Menlo, "PingFang SC", "Microsoft YaHei", monospace;
 }
 code {
   padding: 2px 4px;
@@ -2010,7 +2010,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #04112f;
+  background: #b8af3c;
 }
 .links-of-blogroll {
   font-size: 13px;
