@@ -87,7 +87,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="ML,">
 
 
 
@@ -98,14 +98,18 @@
 
 
 
-<meta name="keywords" content="Peace &amp; Love">
-<meta property="og:type" content="website">
-<meta property="og:title" content="George&#39;s Blog">
-<meta property="og:url" content="https://www.hhhan.me/categories/Algorithm/Data-Structure/index.html">
+<meta name="description" content="模型特点：二类分类，线性分类，判别模型 输入：实例x的特征向量 输出：实例x的类别y，只取+1或-1 模型解释：对应于输入空间（特征空间）中将实例划分为正负两类的分离超平面 方法：基于误分类的损失函数，利用梯度下降法对损失函数进行极小化 优点：简单，易于实现（分为原始形式和对偶形式） 缺点：要求数据集二元线性可分 2.1 感知机模型定义2.1（感知机）${\chi}{\subseteq}{R^n}">
+<meta name="keywords" content="ML">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第二章 感知机">
+<meta property="og:url" content="https://www.hhhan.me/2020/05/04/感知机/index.html">
 <meta property="og:site_name" content="George&#39;s Blog">
+<meta property="og:description" content="模型特点：二类分类，线性分类，判别模型 输入：实例x的特征向量 输出：实例x的类别y，只取+1或-1 模型解释：对应于输入空间（特征空间）中将实例划分为正负两类的分离超平面 方法：基于误分类的损失函数，利用梯度下降法对损失函数进行极小化 优点：简单，易于实现（分为原始形式和对偶形式） 缺点：要求数据集二元线性可分 2.1 感知机模型定义2.1（感知机）${\chi}{\subseteq}{R^n}">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2020-05-05T18:04:02.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="George&#39;s Blog">
+<meta name="twitter:title" content="第二章 感知机">
+<meta name="twitter:description" content="模型特点：二类分类，线性分类，判别模型 输入：实例x的特征向量 输出：实例x的类别y，只取+1或-1 模型解释：对应于输入空间（特征空间）中将实例划分为正负两类的分离超平面 方法：基于误分类的损失函数，利用梯度下降法对损失函数进行极小化 优点：简单，易于实现（分为原始形式和对偶形式） 缺点：要求数据集二元线性可分 2.1 感知机模型定义2.1（感知机）${\chi}{\subseteq}{R^n}">
 
 
 
@@ -135,13 +139,13 @@
 
 
 
-  <link rel="canonical" href="https://www.hhhan.me/categories/Algorithm/Data-Structure/">
+  <link rel="canonical" href="https://www.hhhan.me/2020/05/04/感知机/">
 
 
 
 
 
-  <title>Category: Data Structure | George's Blog</title>
+  <title>第二章 感知机 | George's Blog</title>
   
 
 
@@ -160,7 +164,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -176,7 +180,7 @@
       </a>
     </div>
       
-        <h1 class="site-subtitle" itemprop="description">Live & Thrive</h1>
+        <h1 class="site-subtitle" itemprop="description">Passion Made Possible</h1>
       
   </div>
 
@@ -296,53 +300,275 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>Data Structure<small>Category</small>
-        </h2>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.hhhan.me/2020/05/04/感知机/">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="George Han">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://raw.githubusercontent.com/hanchangjie429/Blog-File/master/Snapseed.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="George's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/09/11/coding-practice/" itemprop="url">
-              
-                <span itemprop="name">Coding Practice</span>
-              
-            </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">第二章 感知机</h2>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-09-11T09:47:04-04:00" content="2019-09-11">
-          09-11
-        </time>
-      </div>
+        <div class="post-meta">
+          
 
-    </header>
-  </article>
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-04T22:20:35-04:00">
+                2020-05-04
+              </time>
+            
 
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2020-05-05T14:04:02-04:00">
+                2020-05-05
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Machine-Learning/" itemprop="url" rel="index">
+                    <span itemprop="name">Machine Learning</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Words count in article&#58;</span>
+                
+                <span title="Words count in article">
+                  181 words
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Reading time &asymp;</span>
+                
+                <span title="Reading time">
+                  1 mins
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    </div>
+      
 
+      
+        <p>模型特点：<strong>二类分类</strong>，<strong>线性分类</strong>，<strong>判别模型</strong></p>
+<p>输入：实例x的<strong>特征向量</strong></p>
+<p>输出：实例x的<strong>类别y</strong>，只取+1或-1</p>
+<p>模型解释：对应于输入空间（特征空间）中将实例划分为正负两类的分离超平面</p>
+<p>方法：基于误分类的损失函数，利用梯度下降法对损失函数进行极小化</p>
+<p>优点：简单，易于实现（分为<strong>原始形式</strong>和<strong>对偶形式</strong>）</p>
+<p>缺点：要求数据集<strong>二元线性可分</strong></p>
+<h2 id="2-1-感知机模型"><a href="#2-1-感知机模型" class="headerlink" title="2.1 感知机模型"></a>2.1 感知机模型</h2><p>定义2.1（感知机）<br>${\chi}{\subseteq}{R^n}$</p>
+<h2 id="2-2-感知机学习策略"><a href="#2-2-感知机学习策略" class="headerlink" title="2.2 感知机学习策略"></a>2.2 感知机学习策略</h2><h2 id="2-3-感知机学习算法"><a href="#2-3-感知机学习算法" class="headerlink" title="2.3 感知机学习算法"></a>2.3 感知机学习算法</h2><h2 id="2-4-学习算法"><a href="#2-4-学习算法" class="headerlink" title="2.4 学习算法"></a>2.4 学习算法</h2><h2 id="2-5-算法收敛性"><a href="#2-5-算法收敛性" class="headerlink" title="2.5 算法收敛性"></a>2.5 算法收敛性</h2>
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="https://tva1.sinaimg.cn/large/006y8mN6ly1g6igvlfcm9j30iq0ow0wc.jpg" alt="George Han wechat" style="width: 200px; max-width: 100%;">
+    <div>Make a friend by scanning my wechat account</div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>扫码赞赏👍</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="https://tva1.sinaimg.cn/large/006y8mN6ly1g6igusjkccj30u00u0q5s.jpg" alt="George Han WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    George Han
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="https://www.hhhan.me/2020/05/04/感知机/" title="第二章 感知机">https://www.hhhan.me/2020/05/04/感知机/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ML/" rel="tag"># ML</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/11/11/Recent-Study-Plan/" rel="next" title="Recent Study Plan--IBM Data Science">
+                <i class="fa fa-chevron-left"></i> Recent Study Plan--IBM Data Science
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2020/08/08/web-scraper-tutorial/" rel="prev" title="Web Scraper Tutorial">
+                Web Scraper Tutorial <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -350,6 +576,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -370,8 +600,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -388,7 +627,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">24</span>
+                  <span class="site-state-item-count">28</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -399,7 +638,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">categories</span>
                 </a>
               </div>
@@ -410,7 +649,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">21</span>
+                  <span class="site-state-item-count">24</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
@@ -436,7 +675,7 @@
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="https://twitter.com/ChangjieH" target="_blank" title="Twitter">
+                    <a href="https://twitter.com/changjie_han" target="_blank" title="Twitter">
                       
                         <i class="fa fa-fw fa-twitter"></i>Twitter</a>
                   </span>
@@ -462,6 +701,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#2-1-感知机模型"><span class="nav-text">2.1 感知机模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-2-感知机学习策略"><span class="nav-text">2.2 感知机学习策略</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-3-感知机学习算法"><span class="nav-text">2.3 感知机学习算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-4-学习算法"><span class="nav-text">2.4 学习算法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-5-算法收敛性"><span class="nav-text">2.5 算法收敛性</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -482,7 +737,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2019</span>
+        <div class="copyright">&copy; 2018 &mdash; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -496,15 +751,15 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">22.7k</span>
+    <span title="Site words total count">26.1k</span>
   
 
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
   </script>
 
   <span class="post-meta-divider">|</span>
-  <span id="busuanzi_container_site_pv">
-    本站总访问量<span id="busuanzi_value_site_pv"></span>次
+  <span id="busuanzi_container_site_uv">
+    本站总访问量<span id="busuanzi_value_site_uv"></span>次
   </span>
 </div>
 
@@ -622,6 +877,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
