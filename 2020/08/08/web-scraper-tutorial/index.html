@@ -106,7 +106,7 @@
 <meta property="og:site_name" content="George&#39;s Blog">
 <meta property="og:description" content="这几天在帮经理做一些爬取数据的任务，借由这个机会，来写一篇有关python爬虫的文章，一是希望能够跟大家分享一些学习的经验，二来也是为了巩固一下自己的知识。 一. 爬虫主要用到的package库 requests（第一当之无愧） bs4 分析源代码 pandas 处理数据 time 设置爬取时间间隔 lxml xpath方法 pretty_errors (美化异常信息，能够让你更清晰更直观的找出错">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2020-08-26T20:48:27.206Z">
+<meta property="og:updated_time" content="2020-08-26T20:50:39.082Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Web Scraper Tutorial">
 <meta name="twitter:description" content="这几天在帮经理做一些爬取数据的任务，借由这个机会，来写一篇有关python爬虫的文章，一是希望能够跟大家分享一些学习的经验，二来也是为了巩固一下自己的知识。 一. 爬虫主要用到的package库 requests（第一当之无愧） bs4 分析源代码 pandas 处理数据 time 设置爬取时间间隔 lxml xpath方法 pretty_errors (美化异常信息，能够让你更清晰更直观的找出错">
@@ -361,7 +361,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2020-08-26T16:48:27-04:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2020-08-26T16:50:39-04:00">
                 2020-08-26
               </time>
             
@@ -435,6 +435,7 @@
 <li>lxml xpath方法</li>
 <li>pretty_errors (美化异常信息，能够让你更清晰更直观的找出错误信息)</li>
 </ul>
+<a id="more"></a>
 <h2 id="二-网页解析"><a href="#二-网页解析" class="headerlink" title="二. 网页解析"></a>二. 网页解析</h2><p>当我们想要爬取某个网站的时候，我们首先要将这个网页的源代码获取下来，因为源代码是网页信息的载体，有了网页源代码之后我们才能从网页中获取我们需要的信息。<br>那么，如何获取我们的网页源代码呢？</p>
 <p>一个很简单的第三方库可以帮到你，他就是<strong>requests</strong>，例如，我们想要获取豆瓣的源代码，首先我们要对豆瓣网页发起请求，这个动作我们可以通过requests.get来完成。<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line">url = <span class="string">'http://www.douban.com'</span></span><br><span class="line">response = requests.get(url)</span><br><span class="line">print(response)</span><br></pre></td></tr></table></figure></p>
 <p>这时，可以看到我们的终端输出</p>
